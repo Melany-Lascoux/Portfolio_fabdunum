@@ -51,6 +51,8 @@
 
 * **git clone https://github.com/Melany-Lascoux/Portfolio_fabdunum** => permet de copier le répertoire de GIT HUB.  
 
+* **git config --global credential.helper 'cache --timeout=3600'** => permet d'enregistrer son identifiant et mot de passe.
+
 ## DOCKER
 * **docker-machine create -d virtualbox Tatooine** => créer une machine.
 * **docker-machine ip Tatooine** => obtenir l'adresse ip de la machine.
