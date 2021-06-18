@@ -7,31 +7,71 @@ body {
 }
 
 .title {
-
+    padding: 30px;
+    text-align: center;
+    background: darksalmon;
+    color: white;
+    background-image: url("image_flowers.jpg");
 }
 
 .navbar {
+    overflow: hidden;
+    background-color: coral;
+}
 
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-family: Indie Flower;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a.droite {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: lightgrey;
+    color: black;
 }
 
 .rightprofil {
-
+    background-color: white;
 }
 
 .leftprofil {
+    background-color: white;
+}
 
+.cadre {
+    background-color: rgb(253, 242, 190);
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Open sans;
 }
 
 .rigthcontact {
-
+    justify-content: flex-end;
 }
 
 .leftcontact {
-
+    justify-content: flex-start;
 }
 
 .form {
-
+    font-size: 18px;
+    font-family: Open sans;
+    /* box-sizing: content-box; */
+    width: 100%;
+    /* border: 5px solid darksalmon;
+    border-radius: 1em; */
+    /* float: right; */
+    text-align: center;
 }
 
 .form_nom{

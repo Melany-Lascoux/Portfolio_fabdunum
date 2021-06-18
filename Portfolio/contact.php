@@ -53,8 +53,6 @@
         </form>
     </div>
 
-Merci de votre message.
-
 <?php
     require_once 'footer.php';
 ?>

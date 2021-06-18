@@ -19,5 +19,6 @@
     <div class="navbar">
         <a href="profil.php" class="<?php if ($titre=="profil") {echo "active";}?>">Profil</a>
         <a href="competences.php" class="<?php if ($titre=="competences") {echo "active";}?>">Compétences</a>
+        <a href="projets.php" class="<?php if ($titre=="projets") {echo "active";}?>">Projets</a>
         <a href="contact.php" class="<?php if ($titre=="contact") {echo "active";}?>">Contact<a>
     </div>
