@@ -10,4 +10,4 @@
 * **cd Documents** => entrer dans le dossier.
 * **ls Documents** => entrer dans le dossier et voir son contenu.
 * **cd ..** => retour en arrière.
-* **
+* **cat texte.txt** => afficher le contenu d'un fichier.
