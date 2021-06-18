@@ -70,19 +70,20 @@ h5{
 }
 
 .page {  
-    display: -ms-flexbox;
+    /* display: -ms-flexbox; */
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    /* -ms-flex-wrap: wrap; */
+    /* flex-wrap: wrap; */
 }
 
 .cote_gauche {
     flex: 30%;
-    padding: 20px;
+    padding: 0;
     background-color: white;
     border: solid 12px darksalmon;
     border-radius: 10px;
     justify-content: flex-start;
+
 }
 
 .cote_droit {
@@ -111,7 +112,7 @@ h5{
     font-family: Open Sans;
     box-sizing: content-box;
     width: 25%;
-    text-align: justify;
+    text-align: left;
     background-color: darksalmon;
 }
 
