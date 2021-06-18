@@ -82,6 +82,11 @@ h5{
     background-color: white;
     border: solid 12px darksalmon;
     border-radius: 10px;
+    justify-content: flex-start;
+}
+
+.cote_droit {
+    justify-content: flex-end;
 }
 
 .main {   
@@ -90,6 +95,7 @@ h5{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cadre{
@@ -105,7 +111,6 @@ h5{
     font-family: Open Sans;
     box-sizing: content-box;
     width: 25%;
-    /* float: left; */
     text-align: justify;
     background-color: darksalmon;
 }
