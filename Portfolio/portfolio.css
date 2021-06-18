@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.title {
+
+}
+
+.navbar {
+
+}
+
+.rightprofil {
+
+}
+
+.leftprofil {
+
+}
+
+.rigthcontact {
+
+}
+
+.leftcontact {
+
+}
+
+.form {
+
+}
+
+.form_nom{
+    flex: 50%;
+    padding: 10px;
+}
+
+.form_contact{
+    flex: 50%;
+    padding: 10px;
+}
+
+.form_gender{
+    flex: 50%;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.form_date{
+    flex: 50%;
+    padding: 10px;
+}
+
+.form_message{
+    flex: 50%;
+    padding: 30px;
+    text-align: justify;
+}
+
+.form_boutons{
+    flex: 50%;
+    padding: 20px;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    background: coral;
+}

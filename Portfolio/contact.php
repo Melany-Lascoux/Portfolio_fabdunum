@@ -1,41 +1,57 @@
 <?php
-    $titre='Contact';
+    $titre='contact';
     require_once 'header.php';
 ?>
 
-<br>
-Bonjour
-<br>
-<br>
+    <div class="left">
+        <h5>Mes informations</h5>
+            <ul>
+                <li>Email : melany.lascoux@gmail.com</li>
+                <li>Tél : 06 59 61 49 47</li>
+                <li>Adresse : 86000 Poitiers</li>
+            </ul>
+    </div>
 
-<form action="traitement.php" method="GET">
-    <label for="prenom">Prénom:</label>
-    <input type="text" id="prenom" name="prenom">
-    <label for="nom">Nom:</label>
-    <input type="text" id="nom" name="nom">
-<br>
-<br>
-    <label for="mail">Email:</label>
-    <input type="email" id="mail" name="mail">
-<br>
-<br>
-    <label for="sujet">Sujet:</label>
-    <input type="text" id="sujet" name="sujet">
-<br>
-<br>
-    <label for="message">Message:</label><br>
-    <textarea name="message" rows="3" cols="30"></textarea>
-<br>
-<br>
-    <label for="cgu">En validant ce formulaire, vous acceptez d'être contacté.</label>
-    <input type="checkbox" name="cgu">
-<br>
-<br>
-    <input type="submit">
-    <input type="reset">
-</form>
-<br>
-<br>
+    <div class="right">
+        <form action="traitement.php" method="GET">
+            <h5>Formulaire</h5>
+                <div class="form_nom">
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" name="prenom">
+                    <label for="nom:">Nom:</label>
+                    <input type="text" id="nom" name="nom">
+                </div>
+                <div class="form_contact">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="phone">Téléphone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form_gender">
+                    <label for="sex_select">Genre :</label>
+                    <select name="gender" id="sex_select">
+                        <option value="female">Femme</option>
+                        <option value="male">Homme</option>
+                        <option value="other">Autre</option>
+                    </select>            
+                </div>
+                <div class="form_date">
+                    <label for="datemax">Date de naissance:</label>
+                    <input type="date" id="date_min_max" name="date_min_max" min="1900-12-31" max="2020-12-31">
+                </div>
+                <div class="form_message">
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" rows="5" cols="70"></textarea>
+                </div>
+                <div class="file">
+                    <label for="file">Charger document:</label>
+                    <input type="file"  id="file"   name="file">
+                </div>
+                <div class="form_boutons">
+                    <input type="submit" value="Envoyez">
+                    <input type="reset" value="Réinitialiser">
+        </form>
+    </div>
 
 Merci de votre message.
 

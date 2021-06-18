@@ -45,7 +45,8 @@
 * **git remote add origin https://github.com/Melany-Lascoux/Portfolio_fabdunum** => permet de créer le lien entre GIT BASH et le répertoire GIT HUB.
 * **git branch -M main** => permet de choisir la branche.  
 
-* **git add Readme.md** => enregistrer les modifications effectuées sur GIT HUB.
+* **git add Readme.md** => enregistrer les modifications effectuées sur d'un fichier spécifique sur le GIT HUB.
+* **git add .** => enregistrer toutes les moficitations effectuées.
 * **git push -u origin main** => permet d'envoyer du contenu sur le répertoire GIT HUB.
 * **git push** => permet d'envoyer la modification sur le répertoire.  
 
