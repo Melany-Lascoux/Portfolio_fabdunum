@@ -7,11 +7,15 @@ body {
 }
 
 .title {
-    padding: 30px;
-    text-align: center;
+    padding: 150px;
+    text-align: left;
     background: darksalmon;
-    color: white;
-    background-image: url("image_flowers.jpg");
+    color: black;
+    background-image: url("img_flower_4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Josefin Slab;
+    font-size: 30px;
 }
 
 .navbar {
@@ -24,27 +28,34 @@ body {
     display: block;
     color: white;
     font-size: 30px;
-    font-family: Indie Flower;
+    font-family: Pattaya;
     text-align: center;
-    padding: 14px 20px;
+    padding: 14px 27px;
     text-decoration: none;
 }
 
-.navbar a.droite {
+.navbar a.right {
     float: right;
 }
 
 .navbar a:hover {
-    background-color: lightgrey;
+    background-color: coral;
     color: black;
 }
 
 .rightprofil {
     background-color: white;
+    display: block;
+    float: none;
+    padding: 24px 30px;
 }
 
 .leftprofil {
     background-color: white;
+    display: block;
+    float: left;
+    padding: 20px 100px 500px;
+    border-right: solid darksalmon 5px;
 }
 
 .cadre {
@@ -66,12 +77,9 @@ body {
 .form {
     font-size: 18px;
     font-family: Open sans;
-    /* box-sizing: content-box; */
     width: 100%;
-    /* border: 5px solid darksalmon;
-    border-radius: 1em; */
-    /* float: right; */
     text-align: center;
+    display: flex;
 }
 
 .form_nom{
@@ -104,6 +112,11 @@ body {
 .form_boutons{
     flex: 50%;
     padding: 20px;
+}
+
+.img {
+    height: 50px;
+    width: 50px;
 }
 
 .footer {

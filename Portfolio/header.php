@@ -20,5 +20,6 @@
         <a href="profil.php" class="<?php if ($titre=="profil") {echo "active";}?>">Profil</a>
         <a href="competences.php" class="<?php if ($titre=="competences") {echo "active";}?>">Compétences</a>
         <a href="projets.php" class="<?php if ($titre=="projets") {echo "active";}?>">Projets</a>
-        <a href="contact.php" class="<?php if ($titre=="contact") {echo "active";}?>">Contact<a>
+        <a href="hobbies.php" class="<?php if ($titre=="hobbies") {echo "active";}?>">Hobbies</a>
+        <a href="contact.php" class="right" class="<?php if ($titre=="contact") {echo "active";}?>">Contact<a>
     </div>
