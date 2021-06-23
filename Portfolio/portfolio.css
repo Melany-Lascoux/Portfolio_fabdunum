@@ -12,7 +12,6 @@ body {
     background: darksalmon;
     color: black;
     background-image: url("img_flower_4.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
     font-family: Josefin Slab;
     font-size: 30px;
@@ -68,10 +67,14 @@ body {
 
 .rigthcontact {
     justify-content: flex-end;
+    display: block;
+    float: right;
 }
 
 .leftcontact {
     justify-content: flex-start;
+    display: block;
+    float: left;
 }
 
 .form {
@@ -115,8 +118,9 @@ body {
 }
 
 .img {
-    height: 50px;
-    width: 50px;
+    height: 10em;
+    width: 10em;
+    object-position: center top;
 }
 
 .footer {
