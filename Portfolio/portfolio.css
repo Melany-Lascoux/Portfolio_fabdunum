@@ -42,6 +42,35 @@ body {
     color: black;
 }
 
+h1{
+    font-size: 80px;
+    font-family: Pattaya;
+    text-shadow: 3px 2px 2px black;
+}
+
+h2{
+    font-size: 55px;
+    font-family: Pattaya;
+    text-shadow: 2px 2px 1px black;
+}
+
+h3{
+    font-size: 35px;
+    font-family: Josefin Slab;
+    text-align: center;
+}
+
+h4{
+    font-size: 25px;
+    font-family: Mate SC;
+}
+
+h5{
+    font-size: 28px;
+    font-family: Mate SC;
+    text-align: center;
+}
+
 .rightprofil {
     background-color: white;
     display: block;
