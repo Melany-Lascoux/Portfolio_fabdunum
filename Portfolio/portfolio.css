@@ -1,6 +1,6 @@
-/* * {
+* {
     box-sizing: border-box;
-} */
+}
 
 body {
     margin: 0;
@@ -62,27 +62,55 @@ h3{
 h4{
     font-size: 25px;
     font-family: Mate SC;
+    text-align: center;
 }
 
 h5{
     font-size: 28px;
     font-family: Mate SC;
-    text-align: center;
 }
 
-.rightprofil {
+.right_profil {
     background-color: white;
     display: block;
     padding: 20px;
 }
 
-.leftprofil {
+.left_profil {
     background-color: white;
     display: block;
     float: left;
-    padding: 20px 100px;
+    padding: 50px 100px 400px 100px;
     border-right: solid darksalmon 5px;
-    margin-right: 30px;
+    margin-right: 50px;
+}
+
+.com_right {
+    display: block;
+    /* padding: 30px 30px; */
+}
+
+.image_etudes {
+    float: left;
+}
+
+/* .comp_left {
+    background-color: white;
+    display: block;
+    float: left;
+    padding: 30px 50px 300px 50px;
+    margin-right: 50px;
+} */
+
+li {
+    font-size: 20px;
+    font-family: Ubuntu;
+    padding: 0;
+}
+
+p {
+    font-size: 20px;
+    font-family: Ubuntu, Open Sans;
 }
 
 .cadre {
@@ -90,16 +118,18 @@ h5{
     width: 100%;
     padding: 20px;
     font-size: 20px;
-    font-family: Open sans;
+    font-family: Ubuntu, Open sans;
+    margin-bottom: 20px;
+    float: right;
 }
 
-.rigthcontact {
+.rigth_contact {
     justify-content: flex-end;
     display: block;
     float: right;
 }
 
-.leftcontact {
+.left_contact {
     justify-content: flex-start;
     display: block;
     float: left;
@@ -107,7 +137,7 @@ h5{
 
 .form {
     font-size: 18px;
-    font-family: Open sans;
+    font-family: Ubuntu, Open sans;
     width: 100%;
     text-align: center;
     display: flex;
@@ -147,9 +177,12 @@ h5{
 
 .photo_profil {
     float: left;
-    border: solid black 3px;
-    border-radius: 5px;
-    border-image-outset: 0;
+    border-radius: 8px;
+    padding: 0;
+}
+
+img {
+    border-radius: 8px;
 }
 
 .footer {
@@ -158,3 +191,4 @@ h5{
     background: coral;
     clear: both;
 }
+

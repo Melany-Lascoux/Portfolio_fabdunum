@@ -3,7 +3,7 @@
     require_once 'header.php';
 ?>
 
-    <div class="left">
+    <div class="left_contact">
         <h5>Mes informations</h5>
             <ul>
                 <li>Email : melany.lascoux@gmail.com</li>
@@ -12,7 +12,7 @@
             </ul>
     </div>
 
-    <div class="right">
+    <div class="right_contact">
         <form action="traitement.php" method="GET">
             <h5>Formulaire</h5>
                 <div class="form_nom">
