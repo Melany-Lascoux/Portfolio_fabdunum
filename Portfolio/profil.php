@@ -8,8 +8,16 @@
             <div class="photo_profil">
                 <img src="images/photo_profil.jpg" alt="photo" height="400" width="250">
             </div>
-        <h4>A propos de moi</h4>
-        <p>Texte</p>
+        <h4>Soft Skills</h4>
+            <ul>
+                <li>Travail d'équipe</li>
+                <li>Recherches</li>
+            </ul>
+        <h4>Qualités</h4>
+            <ul>
+                <li>Curieuse</li>
+                <li>Persévérente</li>
+            </ul>
     </div>
     <div class="rightprofil">
         <h3>Expérience Professionnelle</h3>

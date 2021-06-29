@@ -1,6 +1,6 @@
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 body {
     margin: 0;
@@ -73,7 +73,6 @@ h5{
 .rightprofil {
     background-color: white;
     display: block;
-    float: right;
     padding: 20px;
 }
 
@@ -83,6 +82,7 @@ h5{
     float: left;
     padding: 20px 100px;
     border-right: solid darksalmon 5px;
+    margin-right: 30px;
 }
 
 .cadre {
@@ -149,6 +149,7 @@ h5{
     float: left;
     border: solid black 3px;
     border-radius: 5px;
+    border-image-outset: 0;
 }
 
 .footer {
