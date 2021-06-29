@@ -11,7 +11,7 @@ body {
     text-align: left;
     background: darksalmon;
     color: black;
-    background-image: url("img_flower_4.jpg");
+    background-image: url("images/img_flower_4.jpg");
     background-size: cover;
     font-family: Josefin Slab;
     font-size: 30px;
@@ -42,7 +42,7 @@ body {
     color: black;
 }
 
-h1{
+/* h1{
     font-size: 80px;
     font-family: Pattaya;
     text-shadow: 3px 2px 2px black;
@@ -52,7 +52,7 @@ h2{
     font-size: 55px;
     font-family: Pattaya;
     text-shadow: 2px 2px 1px black;
-}
+} */
 
 h3{
     font-size: 35px;
