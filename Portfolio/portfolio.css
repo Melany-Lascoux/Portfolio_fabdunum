@@ -10,7 +10,7 @@ body {
     padding: 150px;
     text-align: left;
     background: darksalmon;
-    color: black;
+    color: white;
     background-image: url("images/img_flower_4.jpg");
     background-size: cover;
     font-family: Josefin Slab;
@@ -31,6 +31,7 @@ body {
     text-align: center;
     padding: 14px 27px;
     text-decoration: none;
+    text-shadow: 2px 1px 1px black;
 }
 
 .navbar a.right {
@@ -42,17 +43,15 @@ body {
     color: black;
 }
 
-/* h1{
+h1{
     font-size: 80px;
-    font-family: Pattaya;
     text-shadow: 3px 2px 2px black;
 }
 
 h2{
     font-size: 55px;
-    font-family: Pattaya;
     text-shadow: 2px 2px 1px black;
-} */
+}
 
 h3{
     font-size: 35px;
@@ -74,15 +73,15 @@ h5{
 .rightprofil {
     background-color: white;
     display: block;
-    float: none;
-    padding: 24px 30px;
+    float: right;
+    padding: 20px;
 }
 
 .leftprofil {
     background-color: white;
     display: block;
     float: left;
-    padding: 20px 100px 500px;
+    padding: 20px 100px;
     border-right: solid darksalmon 5px;
 }
 
@@ -146,15 +145,15 @@ h5{
     padding: 20px;
 }
 
-.img {
-    height: min-content;
-    width: min-content;
-    /* display: block;
-    float: left; */
+.photo_profil {
+    float: left;
+    border: solid black 3px;
+    border-radius: 5px;
 }
 
 .footer {
-    padding: 10px;
+    padding: 50px;
     text-align: center;
     background: coral;
+    clear: both;
 }

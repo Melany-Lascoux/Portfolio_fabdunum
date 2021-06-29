@@ -5,9 +5,9 @@
 
     <div class="leftprofil">
         <h3>Profil</h3>
-        <div class="img">
-            <img src="images/photo_profil.jpg" alt="photo">
-        </div>
+            <div class="photo_profil">
+                <img src="images/photo_profil.jpg" alt="photo" height="400" width="250">
+            </div>
         <h4>A propos de moi</h4>
         <p>Texte</p>
     </div>
