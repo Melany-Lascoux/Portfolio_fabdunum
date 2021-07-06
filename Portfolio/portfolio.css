@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }
@@ -10,16 +14,17 @@ body {
     padding: 150px;
     text-align: left;
     background: darksalmon;
-    color: white;
     background-image: url("images/img_flower_4.jpg");
     background-size: cover;
-    font-family: Josefin Slab;
     font-size: 30px;
 }
 
 .navbar {
     overflow: hidden;
     background-color: coral;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navbar a {
@@ -39,24 +44,36 @@ body {
 }
 
 .navbar a:hover {
-    background-color: coral;
-    color: black;
+    background-color: white;
+    color: coral;
+}
+
+.navbar a.active {
+    background-color: white;
+    color: coral;
 }
 
 h1{
     font-size: 80px;
     text-shadow: 3px 2px 2px black;
+    font-family: Josefin Slab;
+    color: white;
 }
 
 h2{
     font-size: 55px;
     text-shadow: 2px 2px 1px black;
+    font-family: Josefin Slab;
+    color: white;
 }
 
 h3{
     font-size: 35px;
     font-family: Josefin Slab;
     text-align: center;
+    background-color: coral;
+    color: white;
+    padding: 20px;
 }
 
 h4{
@@ -68,44 +85,75 @@ h4{
 h5{
     font-size: 28px;
     font-family: Mate SC;
+    text-align: justify;
+    padding: 12px 20px;
 }
 
-.right_profil {
-    background-color: white;
+#accueil {
+    height: 700px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    width: 300px;
+    height: 530px;
+    border-radius: 8px;
+    margin: 50px 50px;
     display: block;
-    padding: 20px;
 }
 
-.left_profil {
-    background-color: white;
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.container {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+#experiences {
+    height: auto;
+}
+
+.accueil_left {
     display: block;
     float: left;
-    padding: 50px 100px 400px 100px;
-    border-right: solid darksalmon 5px;
-    margin-right: 50px;
 }
 
-.com_right {
-    display: block;
-    /* padding: 30px 30px; */
-}
-
-.image_etudes {
-    float: left;
-}
-
-/* .comp_left {
+.accueil_right {
     background-color: white;
     display: block;
+    padding: 200px 100px 200px 500px;
+}
+
+.comp_left {
+    display: block;
     float: left;
-    padding: 30px 50px 300px 50px;
-    margin-right: 50px;
-} */
+    padding: 30px 30px;
+}
+
+.skills_left {
+    display: block;
+    padding: 30px 50px 30px 600px;
+}
+
+.skills_right {
+    display: block;
+    padding: 0px 50px 30px 1000px;
+}
+
+cite {
+    font-size: 30px;
+    font-family: Ubuntu;
+}
 
 li {
     font-size: 20px;
     font-family: Ubuntu;
-    padding: 0;
+    padding: 10px 50px;
+    list-style-type: circle;
+    list-style-position: inside;
 }
 
 p {
@@ -113,72 +161,47 @@ p {
     font-family: Ubuntu, Open Sans;
 }
 
-.cadre {
-    background-color: rgb(253, 242, 190);
-    width: 100%;
-    padding: 20px;
-    font-size: 20px;
-    font-family: Ubuntu, Open sans;
-    margin-bottom: 20px;
-    float: right;
-}
-
-.rigth_contact {
-    justify-content: flex-end;
-    display: block;
-    float: right;
-}
-
-.left_contact {
-    justify-content: flex-start;
-    display: block;
-    float: left;
-}
-
 .form {
     font-size: 18px;
     font-family: Ubuntu, Open sans;
-    width: 100%;
     text-align: center;
-    display: flex;
+    display: block;
 }
 
 .form_nom{
-    flex: 50%;
     padding: 10px;
+    text-align: center;
 }
 
 .form_contact{
-    flex: 50%;
     padding: 10px;
+    text-align: center;
 }
 
 .form_gender{
-    flex: 50%;
     padding: 10px;
     padding-top: 20px;
+    text-align: center;
 }
 
 .form_date{
-    flex: 50%;
     padding: 10px;
+    text-align: center;
 }
 
 .form_message{
-    flex: 50%;
     padding: 30px;
-    text-align: justify;
+    text-align: center;
+}
+
+.form_file{
+    padding: 10px;
+    text-align: center;
 }
 
 .form_boutons{
-    flex: 50%;
     padding: 20px;
-}
-
-.photo_profil {
-    float: left;
-    border-radius: 8px;
-    padding: 0;
+    text-align: center;
 }
 
 img {
@@ -190,5 +213,7 @@ img {
     text-align: center;
     background: coral;
     clear: both;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
-

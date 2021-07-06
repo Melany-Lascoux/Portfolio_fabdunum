@@ -13,7 +13,7 @@
     <div class="title">
         <h1>Mélany Lascoux</h1>
             <h2>Bienvenue sur mon Portfolio</h2>
-    </div>    
+    </div>
 
 
     <div class="navbar">
@@ -24,3 +24,4 @@
         <a href="hobbies.php" class="<?php if ($titre=="hobbies") {echo "active";}?>">Hobbies</a>
         <a href="contact.php" class="right" class="<?php if ($titre=="contact") {echo "active";}?>">Contact<a>
     </div>
+

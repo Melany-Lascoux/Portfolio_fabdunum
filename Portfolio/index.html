@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pattaya|Indie Flower|Josefin Slab|Mate SC|Ubuntu|Open Sans">
+    <link href="portfolio.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio de Mélany Lascoux</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Mélany Lascoux</h1>
+            <h2>Bienvenue sur mon Portfolio</h2>
+    </div>
+
+    <div class="navbar">
+        <a href="#accueil" >Accueil</a>
+        <a href="#experiences">Expériences</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+
+    <div id="accueil">
+        <h3>Accueil</h3>
+            <div class="accueil_left">
+                <div class="card">
+                    <img src="images/photo_profil.jpg" alt="photo" height="400" width="300">
+                        <div class="container">
+                            <p><b>Mélany Lascoux</b></p> 
+                            <p>Développeuse web junior</p> 
+                        </div>
+                </div>
+            </div>
+            <div class="accueil_right">
+                <cite>"Je suis peut être petite, mais mon esprit est aussi grand que l'univers." - Yoko Ono</cite>
+                <p>Phrase de présentation.</p>
+            </div>
+    </div>
+    
+    <div id="experiences">
+        <h3>Expériences Professionnelles</h3>
+                <h5>Formations</h5>
+                    <ul>
+                        <li>Depuis le 17 Mai 2021 : Développement web à la Fabrique du Numérique : HTML - CSS - PHP - JavaScript - BASH - DOCKER - GIT.</li>
+                        <li>Novembre 2020 : La Fabrique du Numérique : Création d'un Portfolio sur Google Site.</li>
+                    </ul>
+                <h5>Stages de fouilles archéologiques</h5>
+                    <ul>
+                        <li>Juillet 2019 - CESCM de Poitiers.</li>
+                        <li>Octobre 2018 - CESCM de Poitiers.</li>
+                        <li>Juillet 2018 - CESCM de Poitiers.</li>
+                        <li>Août 2017 - Département de la Charente.</li>
+                        <li>Août 2016 - Hadès Archéologie.</li>
+                    </ul>
+<br>
+<br>
+    <h3>Etudes et Diplômes</h3>
+            <h5>Université de Poitiers (86)</h5>
+                <ul>
+                    <li>Master 1 Mondes Médiévaux (2018-2019)</li>
+                    <li>Licence Histoire de l'Art et Archéologie - spécialité Archéologie (2018).</li>
+                    <li>Psychologie (2011-2014)</li>
+                </ul>
+    </div>
+
+    <div id="competences">
+        <h3>Compétences</h3>
+            <ul>
+                <li>HTML - CSS - PHP - JavaScript.</li>
+                <li>GIT - BASH - DOCKER.</li>
+                <li>Logiciels de bureautique (Word, Powerpoint).</li>
+                <li>Logiciels de création (Canva, Google Site).</li>                    <li>Anglais A2</li>
+            </ul>
+        <h3>Soft Skills</h3>
+            <div class="comp_left">
+                <img src="images/img_skills.jpg" alt="coworking" height="400" width="500">
+            </div>
+            <!-- <div class="comp_right"> -->
+                    <div class="skills_left">
+                        <ul>
+                            <li>Travail d'équipe</li>
+                            <li>Sens de l'organisation</li>
+                            <li>Gestion de projet</li>
+                            <li>Résolution de problèmes</li>
+                            <li>Créativité</li>
+                        </ul>
+                    </div>
+                    <div class="skills_right">
+                        <ul>
+                            <li>Curiosité intellectuelle</li>
+                            <li>Rédaction</li>
+                            <li>Recherches</li>
+                            <li>Esprit critique</li>
+                        </ul>
+                    </div>
+        <!-- </div>         -->
+    </div>
+
+    <div id="projets">
+
+    </div>
+
+    <div id="hobbies">
+
+    </div>
+
+    <div id="contact">
+        <form action="traitement.php" method="GET">
+            <h3>Formulaire</h3>
+                <div class="form_nom">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom">
+                    <label for="nom:">Nom :</label>
+                    <input type="text" id="nom" name="nom">
+                </div>
+                <div class="form_contact">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email">
+                    <label for="phone">Téléphone :</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form_gender">
+                    <label for="sex_select">Genre :</label>
+                    <select name="gender" id="sex_select">
+                        <option value="female">Femme</option>
+                        <option value="male">Homme</option>
+                        <option value="other">Autre</option>
+                    </select>            
+                </div>
+                <div class="form_date">
+                    <label for="datemax">Date de naissance :</label>
+                    <input type="date" id="date_min_max" name="date_min_max" min="1900-12-31" max="2020-12-31">
+                </div>
+                <div class="form_message">
+                    <label for="message">Message :</label><br>
+                    <textarea name="message" rows="5" cols="70"></textarea>
+                </div>
+                <div class="form_file">
+                    <label for="file">Charger document :</label>
+                    <input type="file"  id="file"   name="file">
+                </div>
+                <div class="form_boutons">
+                    <input type="submit" value="Envoyez">
+                    <input type="reset" value="Réinitialiser">
+        </form>
+    </div>    
+
+    <div class="footer">
+        <p>Email : melany.lascoux@gmail.com</p>
+        <p>Tél : 06 59 61 49 47</p>
+        <p>Adresse : 86000 Poitiers</p>
+    </div>
+
+</body>
+</html>

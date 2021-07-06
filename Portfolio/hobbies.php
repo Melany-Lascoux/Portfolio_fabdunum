@@ -6,7 +6,7 @@
 <div class="left_hobbies">
             <h3>Passions</h3>
         <div class="img">
-            <img src="images/image_gaming.jpg" alt="image_ordinateur" height="1000" width="900">
+            
         </div>
             <div class="cadre">
                 <p>Texte</p>
