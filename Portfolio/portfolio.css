@@ -67,30 +67,40 @@ h2{
     color: white;
 }
 
-h3{
-    font-size: 35px;
-    font-family: Josefin Slab;
-    text-align: center;
-    background-color: coral;
-    color: white;
-    padding: 20px;
-}
-
 h4{
     font-size: 25px;
     font-family: Mate SC;
-    text-align: center;
+    text-align: justify;
+    padding: 50px 50px 0px 50px;
 }
 
 h5{
     font-size: 28px;
     font-family: Mate SC;
     text-align: justify;
-    padding: 12px 20px;
+    padding: 50px 50px 0px 50px;
 }
 
-#accueil {
-    height: 700px;
+.partie_accueil {
+    font-size: 30px;
+    font-family: Josefin Slab;
+    text-align: center;
+    background-color: coral;
+    color: white;
+    padding: 12px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.parties {
+    font-size: 30px;
+    font-family: Josefin Slab;
+    text-align: center;
+    background-color: coral;
+    color: white;
+    padding: 12px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .card {
@@ -99,7 +109,7 @@ h5{
     width: 300px;
     height: 530px;
     border-radius: 8px;
-    margin: 50px 50px;
+    margin: 40px 90px;
     display: block;
 }
 
@@ -110,10 +120,6 @@ h5{
 .container {
     padding: 2px 16px;
     text-align: center;
-}
-
-#experiences {
-    height: auto;
 }
 
 .accueil_left {
@@ -127,20 +133,83 @@ h5{
     padding: 200px 100px 200px 500px;
 }
 
-.comp_left {
+.exp_pro {
+    display: flex;
+}
+
+.formations {
+    width: 95%;
+    padding: 0px 0px 0px 50px
+}
+
+.comp {
+    display: flex;
+    padding: 50px 50px 0px 90px;
+}
+
+.comp_liste {
     display: block;
-    float: left;
-    padding: 30px 30px;
+    width: 50%;
+    padding-top: 60px;
+}
+
+.comp_left {
+    display: flex;
+    padding: 50px 50px 0px 90px;
 }
 
 .skills_left {
-    display: block;
-    padding: 30px 50px 30px 600px;
+    width: 30%;
+    padding-top: 60px;
 }
 
 .skills_right {
+    width: 30%;
+    padding-top: 60px;
+}
+
+.games {
+    display: flex;
+}
+
+.card_game_1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    width: 400px;
+    height: 530px;
+    border-radius: 8px;
+    margin: 40px 90px;
     display: block;
-    padding: 0px 50px 30px 1000px;
+    width: 26,5%;
+}
+
+.card_game_1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.container_game_1 {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.card_game_2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    width: 400px;
+    height: 530px;
+    border-radius: 8px;
+    margin: 40px 90px;
+    display: block;
+    width: 26,5%;
+}
+
+.card_game_2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.container_game_2 {
+    padding: 2px 16px;
+    text-align: center;
 }
 
 cite {
@@ -148,10 +217,14 @@ cite {
     font-family: Ubuntu;
 }
 
+ul {
+    padding-top: 0;
+}
+
 li {
     font-size: 20px;
     font-family: Ubuntu;
-    padding: 10px 50px;
+    padding: 10px 50px 0px 60px;
     list-style-type: circle;
     list-style-position: inside;
 }

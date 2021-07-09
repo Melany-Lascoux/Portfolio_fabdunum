@@ -26,7 +26,9 @@
 
 
     <div id="accueil">
-        <h3>Accueil</h3>
+        <div class="partie_accueil">
+            <h3>Accueil</h3>
+        </div>    
             <div class="accueil_left">
                 <div class="card">
                     <img src="images/photo_profil.jpg" alt="photo" height="400" width="300">
@@ -38,12 +40,18 @@
             </div>
             <div class="accueil_right">
                 <cite>"Je suis peut être petite, mais mon esprit est aussi grand que l'univers." - Yoko Ono</cite>
-                <p>Phrase de présentation.</p>
+                <p>Je m'appelle Mélany, j'ai 27 ans et je recherche un poste de Développeuse Web Junior.
+                    De nature curieuse, j'aime apprendre et résoudre les problèmes.</p>
             </div>
     </div>
     
     <div id="experiences">
-        <h3>Expériences Professionnelles</h3>
+        <div class="parties">
+            <h3>Expériences Professionnelles</h3>
+        </div>
+        <div class="exp_pro">
+            <img src="images/icone_livre.png" alt="livre" height=" 100" width="100">
+            <div class="formations">
                 <h5>Formations</h5>
                     <ul>
                         <li>Depuis le 17 Mai 2021 : Développement web à la Fabrique du Numérique : HTML - CSS - PHP - JavaScript - BASH - DOCKER - GIT.</li>
@@ -57,9 +65,13 @@
                         <li>Août 2017 - Département de la Charente.</li>
                         <li>Août 2016 - Hadès Archéologie.</li>
                     </ul>
+            </div>        
+        </div>            
 <br>
 <br>
-    <h3>Etudes et Diplômes</h3>
+    <div class="parties">
+        <h3>Etudes et Diplômes</h3>
+    </div>
             <h5>Université de Poitiers (86)</h5>
                 <ul>
                     <li>Master 1 Mondes Médiévaux (2018-2019)</li>
@@ -69,18 +81,26 @@
     </div>
 
     <div id="competences">
-        <h3>Compétences</h3>
-            <ul>
-                <li>HTML - CSS - PHP - JavaScript.</li>
-                <li>GIT - BASH - DOCKER.</li>
-                <li>Logiciels de bureautique (Word, Powerpoint).</li>
-                <li>Logiciels de création (Canva, Google Site).</li>                    <li>Anglais A2</li>
-            </ul>
-        <h3>Soft Skills</h3>
+        <div class="parties">
+            <h3>Compétences</h3>
+        </div>
+            <div class="comp">
+                <img src="images/image_etudes.jpg" alt="bibliotheque" height="400" width="500">
+                <div class="comp_liste">
+                    <ul>
+                        <li>HTML - CSS - PHP - JavaScript.</li>
+                        <li>GIT - BASH - DOCKER.</li>
+                        <li>Logiciels de bureautique (Word, Powerpoint).</li>
+                        <li>Logiciels de création (Canva, Google Site).</li>
+                        <li>Anglais A2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="parties">
+                <h3>Soft Skills</h3>
+            </div>
             <div class="comp_left">
                 <img src="images/img_skills.jpg" alt="coworking" height="400" width="500">
-            </div>
-            <!-- <div class="comp_right"> -->
                     <div class="skills_left">
                         <ul>
                             <li>Travail d'équipe</li>
@@ -98,20 +118,55 @@
                             <li>Esprit critique</li>
                         </ul>
                     </div>
-        <!-- </div>         -->
-    </div>
+                </div>
+        </div>          
 
     <div id="projets">
-
+        <div class="parties">
+            <h3>Projets</h3>
+        </div>
+            <h4>Montage PC</h4>
+            <h4>Création d'un site internet dédié aux survival horror</h4>
+            <h4>Développer des applications/jeux qui améliorent le quotidien</h4>
     </div>
 
     <div id="hobbies">
+        <div class="parties">
+            <h3>Hobbies</h3>
+        </div>
+        <div class="games">
+            <h4>Jeux vidéo</h4>
+                <div class="card_game_1">
+                    <img src="images/image_witcher.jpg" alt="the_witcher_3" height="400" width="400">
+                        <div class="container_game_1">
+                            <p><b>RPG</b></p>
+                            <p>Etre qui on veut</p>
+                        </div>
+                </div>
+                <div class="card_game_2">
+                    <img src="images/image_assassin.jpg" alt="assassin_creed" height="400" width="400">
+                        <div class="container_game_2">
+                            <p><b>Mondes ouvert</b></p>
+                            <p>Voir en grand</p>
+                        </div>
+                </div>
+        </div>        
 
+
+
+
+
+
+            <h4>Littérature</h4>
+            <h4>Histoire et Civilisations</h4>
+            <h4>Psychologie</h4>
     </div>
 
     <div id="contact">
         <form action="traitement.php" method="GET">
-            <h3>Formulaire</h3>
+            <div class="parties">
+                <h3>Formulaire</h3>
+            </div>    
                 <div class="form_nom">
                     <label for="prenom">Prénom :</label>
                     <input type="text" id="prenom" name="prenom">
@@ -151,9 +206,7 @@
     </div>    
 
     <div class="footer">
-        <p>Email : melany.lascoux@gmail.com</p>
-        <p>Tél : 06 59 61 49 47</p>
-        <p>Adresse : 86000 Poitiers</p>
+        <p><b>Email :</b> melany.lascoux@gmail.com - <b>Tél :</b> 06 59 61 49 47 - <b> Adresse :</b> 86000 Poitiers</p>
     </div>
 
 </body>
