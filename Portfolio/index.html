@@ -276,28 +276,6 @@
             }
             x[slideIndex[no]-1].style.display = "block";  
         }
-    </script>
-        
-    <script>
-            var slideIndex2 = [1,1];
-            var slideId2 = ["mySlides2"]
-            showSlides2(1, 0);
-            showSlides2(1, 1);
-            
-            function plusSlides2(n, no) {
-                showSlides2(slideIndex2[no] += n, no);
-            }
-            
-            function showSlides2(n, no) {
-                var i;
-                var x = document.getElementsByClassName(slideId2[no]);
-                    if (n > x.length) {slideIndex2[no] = 1}    
-                    if (n < 1) {slideIndex2[no] = x.length}
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";  
-                }
-                x[slideIndex2[no]-1].style.display = "block";  
-            }
     </script> -->
 
     <script>
@@ -324,8 +302,6 @@
                 slides[slideIndex-1].style.display = "block";  
         }
     </script>
-
-
 
     <script>
         var slideIndex2 = 1;
