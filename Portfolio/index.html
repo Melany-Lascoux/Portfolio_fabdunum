@@ -21,7 +21,7 @@
         <a href="#competences">Compétences</a>
         <a href="#projets">Projets</a>
         <a href="#hobbies">Hobbies</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="right">Contact</a>
     </div>
 
 
@@ -50,7 +50,6 @@
             <h3>Expériences Professionnelles</h3>
         </div>
         <div class="exp_pro">
-            <img src="images/icone_livre.png" alt="livre" height=" 100" width="100">
             <div class="formations">
                 <h5>Formations</h5>
                     <ul>
@@ -134,32 +133,80 @@
         <div class="parties">
             <h3>Hobbies</h3>
         </div>
-        <div class="games">
             <h4>Jeux vidéo</h4>
-                <div class="card_game_1">
-                    <img src="images/image_witcher.jpg" alt="the_witcher_3" height="400" width="400">
-                        <div class="container_game_1">
-                            <p><b>RPG</b></p>
-                            <p>Etre qui on veut</p>
+                <div class="slideshow-container">
+                    <div class="mySlides1">
+                        <img src="images/image_rpg.jpg" width="1000" height="640">
+                        <div class="text_img">
+                            <b>RPG</b><br>
+                            Be yourself
                         </div>
-                </div>
-                <div class="card_game_2">
-                    <img src="images/image_assassin.jpg" alt="assassin_creed" height="400" width="400">
-                        <div class="container_game_2">
-                            <p><b>Mondes ouvert</b></p>
-                            <p>Voir en grand</p>
+                    </div>
+
+                    <div class="mySlides1">
+                        <img src="images/image_mondes_ouverts.jpg" width="1000" height="640">
+                        <div class="text_img">
+                            <b>Monde Ouvert</b><br>
+                            I'm free !
                         </div>
+                    </div>
+
+                    <div class="mySlides1">
+                        <img src="images/image_strategie.jpg" width="1000" height="640">
+                        <div class="text_img">
+                            <b>Stratégie</b><br>
+                            Faisons ça bien !
+                        </div>
+                    </div>
+
+                    <div class="mySlides1">
+                        <img src="images/image_choix_multiples.jpg" width="1000" height="640">
+                        <div class="text_img">
+                            <b>Choix multiples</b><br>
+                            C'est moi qui décide !
+                        </div>
+                    </div>
+
+                    <div class="mySlides1">
+                        <img src="images/image_simulation.jpg" width="1000" height="640">
+                        <div class="text_img">
+                            <b>Simulation</b><br>
+                            Se montrer créatif
+                        </div>
+                    </div>
+
+                    <div class="mySlides1">
+                        <img src="images/image_horror.jpg" width="1000" height="640">
+                        <div class="text_img">
+                            <b>Horreur</b><br>
+                            Fait moi peur !
+                        </div>
+                    </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                 </div>
         </div>        
 
-
-
-
-
-
             <h4>Littérature</h4>
-            <h4>Histoire et Civilisations</h4>
-            <h4>Psychologie</h4>
+                <div class="slideshow-container2">
+                    <div class="mySlides2">
+                        <img src="images/image_science_fiction.jpg" width="1000" height="640">
+                        <div class="text_img">
+                            <b>Science-Fiction</b>
+                        </div>
+                    </div>
+
+                    <div class="mySlides2">
+                        <img src="images/image_fantasy.jpg" width="1000" height="640">
+                        <div class="text_img">
+                            <b>Fantasy</b>
+                        </div>
+                    </div>
+
+                    <a class="prev2" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next2" onclick="plusSlides(1, 0)">&#10095;</a>
+                </div>
     </div>
 
     <div id="contact">
@@ -208,6 +255,74 @@
     <div class="footer">
         <p><b>Email :</b> melany.lascoux@gmail.com - <b>Tél :</b> 06 59 61 49 47 - <b> Adresse :</b> 86000 Poitiers</p>
     </div>
+
+    <!-- <script>
+        var slideIndex = [1,1];
+        var slideId = ["mySlides1"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) {slideIndex[no] = 1}    
+                if (n < 1) {slideIndex[no] = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+            }
+            x[slideIndex[no]-1].style.display = "block";  
+        }
+    </script>
+        
+    <script>
+            var slideIndex2 = [1,1];
+            var slideId2 = ["mySlides2"]
+            showSlides2(1, 0);
+            showSlides2(1, 1);
+            
+            function plusSlides2(n, no) {
+                showSlides2(slideIndex2[no] += n, no);
+            }
+            
+            function showSlides2(n, no) {
+                var i;
+                var x = document.getElementsByClassName(slideId2[no]);
+                    if (n > x.length) {slideIndex2[no] = 1}    
+                    if (n < 1) {slideIndex2[no] = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                }
+                x[slideIndex2[no]-1].style.display = "block";  
+            }
+    </script> -->
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides1");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slides[slideIndex-1].style.display = "block";  
+        }
+        </script>
 
 </body>
 </html>

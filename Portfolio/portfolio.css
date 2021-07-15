@@ -11,7 +11,7 @@ body {
 }
 
 .title {
-    padding: 150px;
+    padding: 230px;
     text-align: left;
     background: darksalmon;
     background-image: url("images/img_flower_4.jpg");
@@ -21,10 +21,12 @@ body {
 
 .navbar {
     overflow: hidden;
+    /* background-color: rgba(5); */
     background-color: coral;
     position: fixed;
     top: 0;
     width: 100%;
+    transition: 1s all;
 }
 
 .navbar a {
@@ -37,6 +39,7 @@ body {
     padding: 14px 27px;
     text-decoration: none;
     text-shadow: 2px 1px 1px black;
+    transition: 2s ease-in-out;
 }
 
 .navbar a.right {
@@ -68,10 +71,11 @@ h2{
 }
 
 h4{
-    font-size: 25px;
+    font-size: 28px;
     font-family: Mate SC;
     text-align: justify;
     padding: 50px 50px 0px 50px;
+    text-align: center;
 }
 
 h5{
@@ -168,48 +172,84 @@ h5{
     padding-top: 60px;
 }
 
-.games {
-    display: flex;
+.mySlides1, .mySlides2 {
+    display: none
 }
 
-.card_game_1 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    transition: 0.3s;
-    width: 400px;
-    height: 530px;
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
     border-radius: 8px;
-    margin: 40px 90px;
-    display: block;
-    width: 26,5%;
+    vertical-align: middle;
 }
 
-.card_game_1:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
-.container_game_1 {
-    padding: 2px 16px;
-    text-align: center;
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
-.card_game_2 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    transition: 0.3s;
-    width: 400px;
-    height: 530px;
+.prev:hover, .next:hover {
+    background-color: white;
+    color: black;
+}
+
+.slideshow-container2 {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
     border-radius: 8px;
-    margin: 40px 90px;
-    display: block;
-    width: 26,5%;
+    vertical-align: middle;
 }
 
-.card_game_2:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+.prev2, .next2 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
-.container_game_2 {
-    padding: 2px 16px;
+.next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev2:hover, .next2:hover {
+    background-color: white;
+    color: black;
+}
+
+.text_img {
+    color: #f2f2f2;
+    text-shadow: 2px 2px 1px black;
+    font-size: 40px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
     text-align: center;
+    font-family: Ubuntu;
 }
 
 cite {
