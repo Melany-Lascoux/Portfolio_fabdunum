@@ -172,6 +172,16 @@ h5{
     padding-top: 60px;
 }
 
+.montage_pc {
+    display: flex;
+}
+
+.pieces_liste {
+    display: block;
+    text-align: justify;
+    width: 50%;
+}
+
 .mySlides1, .mySlides2 {
     display: none
 }
