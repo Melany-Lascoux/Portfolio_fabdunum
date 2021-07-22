@@ -132,18 +132,15 @@ h5{
 .accueil_left {
     display: block;
     float: left;
-    background-color: rgb(44, 42, 42);
 }
 
 .accueil_right {
-    background-color: rgb(44, 42, 42);
     display: block;
     padding: 200px 100px 200px 500px;
 }
 
 .exp_pro {
     display: flex;
-    background-color: rgb(44, 42, 42);
 }
 
 .formations {
@@ -154,7 +151,6 @@ h5{
 .comp {
     display: flex;
     padding: 50px 50px 0px 90px;
-    background-color: rgb(44, 42, 42);
 }
 
 .comp_liste {
