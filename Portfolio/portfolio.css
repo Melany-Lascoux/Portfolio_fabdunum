@@ -24,6 +24,7 @@ body {
     overflow: hidden;
     background-color: black;
     position: fixed;
+    z-index: 10;
     top: 0;
     width: 100%;
 }
@@ -33,7 +34,7 @@ body {
     display: block;
     color: white;
     font-size: 30px;
-    font-family: Pattaya;
+    font-family: Zilla Slab;
     text-align: center;
     padding: 14px 27px;
     text-decoration: none;
@@ -70,18 +71,20 @@ h2{
 }
 
 h4{
-    font-size: 28px;
-    font-family: Mate SC;
-    text-align: justify;
+    font-size: 30px;
+    font-family: Encode Sans SC;
     padding: 50px 50px 0px 50px;
-    text-align: center;
+    text-align: left;
+    /* text-shadow: 2px 2px 2px rgb(136, 22, 41); */
+    text-decoration-line: underline;
 }
 
 h5{
     font-size: 28px;
-    font-family: Mate SC;
+    font-family: Encode Sans SC;
     text-align: justify;
     padding: 50px 50px 0px 50px;
+    text-decoration-line: underline;
 }
 
 .partie_accueil {
@@ -255,7 +258,7 @@ h5{
 }
 
 .text_img {
-    color: #f2f2f2;
+    color: white;
     text-shadow: 2px 2px 1px black;
     font-size: 40px;
     padding: 8px 12px;
@@ -290,6 +293,12 @@ p {
     font-size: 20px;
     font-family: Ubuntu, Open Sans;
     line-height: 30px;
+}
+
+.guide {
+    text-align: justify;
+    list-style-type: circle;
+    list-style-position: inside;
 }
 
 .form {
