@@ -160,7 +160,7 @@ h5{
 .comp_liste {
     display: block;
     width: 50%;
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 .comp_left {
@@ -176,6 +176,22 @@ h5{
 .skills_right {
     width: 30%;
     padding-top: 60px;
+}
+
+.documents {
+    display: flex;
+}
+
+.cv {
+    display: block;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.lm {
+    display: block;
+    margin-left: 10px;
+    margin-right: auto;
 }
 
 .montage_pc {
