@@ -8,7 +8,6 @@ html {
 
 body {
     margin: 0;
-    /* background-color: rgb(44, 42, 42); */
 }
 
 .title {
@@ -16,6 +15,8 @@ body {
     text-align: left;
     background: black;
     background-image: url("images/image_title.jpg");
+    width: auto;
+    height: auto;
     background-size: cover;
     font-size: 30px;
 }
@@ -34,12 +35,11 @@ body {
     display: block;
     color: white;
     font-size: 30px;
-    font-family: Zilla Slab;
+    font-family: Zilla Slab, 'Times New Roman', Times, serif;
     text-align: center;
     padding: 14px 27px;
     text-decoration: none;
-    text-shadow: 2px 1px 1px black;
-    transition: all 0.7s ease;
+    transition: all 0.8s ease;
 }
 
 .navbar a.right {
@@ -48,6 +48,7 @@ body {
 
 .navbar a:hover {
     background-color: rgb(136, 22, 41);
+    text-shadow: 2px 1px 1px white;
     color: black;
 }
 
@@ -57,22 +58,22 @@ body {
 }
 
 h1{
-    font-size: 80px;
+    font-size: 60px;
     text-shadow: 3px 2px 2px black;
-    font-family: Josefin Slab;
+    font-family: Merienda, 'Times New Roman', Times, serif;
     color: white;
 }
 
 h2{
     font-size: 55px;
     text-shadow: 2px 2px 1px black;
-    font-family: Josefin Slab;
+    font-family: Zilla Slab, 'Times New Roman', Times, serif;
     color: white;
 }
 
 h4{
     font-size: 30px;
-    font-family: Encode Sans SC;
+    font-family: Encode Sans SC, 'Times New Roman', Times, serif;
     padding: 50px 50px 0px 50px;
     text-align: left;
     /* text-shadow: 2px 2px 2px rgb(136, 22, 41); */
@@ -89,7 +90,7 @@ h5{
 
 .partie_accueil {
     font-size: 50px;
-    font-family: Josefin Slab;
+    font-family: Merienda, 'Times New Roman', Times, serif;
     text-align: center;
     background-color: rgb(136, 22, 41);
     color: black;
@@ -102,7 +103,7 @@ h5{
 
 .parties {
     font-size: 50px;
-    font-family: Josefin Slab;
+    font-family: Merienda, 'Times New Roman', Times, serif;
     text-align: center;
     background-color: rgb(136, 22, 41);
     color: black;
@@ -185,7 +186,7 @@ h5{
 .pieces_liste {
     display: block;
     text-align: justify;
-    width: 60%;
+    width: 70%;
     padding-top: 0;
 }
 
@@ -259,19 +260,19 @@ h5{
 
 .text_img {
     color: white;
-    text-shadow: 2px 2px 1px black;
-    font-size: 40px;
+    text-shadow: 3px 2px 2px black;
+    font-size: 50px;
     padding: 8px 12px;
     position: absolute;
     bottom: 50%;
     width: 100%;
     text-align: center;
-    font-family: Zilla Slab;
+    font-family: Zilla Slab, 'Times New Roman', Times, serif;
 }
 
 cite {
-    font-size: 30px;
-    font-family: Ubuntu;
+    font-size: 39px;
+    font-family: Caveat, 'Times New Roman', Times, serif;
     line-height: 40px;
     text-align: justify;
 }
@@ -281,18 +282,23 @@ ul {
 }
 
 li {
-    font-size: 20px;
-    font-family: Ubuntu;
+    font-size: 22px;
+    font-family: Philosopher, 'Times New Roman', Times, serif;
     padding: 10px 50px 0px 60px;
-    line-height: 30px;
+    line-height: 40px;
     list-style-type: circle;
     list-style-position: inside;
 }
 
 p {
-    font-size: 20px;
-    font-family: Ubuntu, Open Sans;
+    font-size: 23px;
+    font-family: Philosopher, 'Times New Roman', Times, serif;
     line-height: 30px;
+}
+
+.paragraphe {
+    text-align: justify;
+    padding-left: 90px;
 }
 
 .guide {
@@ -303,7 +309,7 @@ p {
 
 .form {
     font-size: 18px;
-    font-family: Ubuntu, Open sans;
+    font-family: Philosopher, 'Times New Roman', Times, serif;
     text-align: center;
     display: block;
 }
@@ -377,8 +383,8 @@ img {
 }
 
 .icon-bar a:hover {
-    background-color: coral;
-    color: white;
+    background-color: rgb(136, 22, 41);
+    color: black;
 }
 
 .twitter {
