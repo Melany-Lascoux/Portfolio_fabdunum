@@ -8,6 +8,85 @@ html {
 
 body {
     margin: 0;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+:root {
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --font-color: #000000;
+    --bg-color: #fff;
+    --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+    --primary-color: #bab8f5;
+    --secondary-color: #a0a4b1;
+    --font-color: #e1e1ff;
+    --bg-color: #09090f;
+    --heading-color: #959aa8;
+}
+
+em {
+    color: white;
+    margin-left: 10px;
+    font-size: 0,3em;
+    font-family: Zilla Slab, 'Times New Roman', Times, serif;
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display:none;
+}
+
+.slider {
+    background-color: white;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: rgb(136, 22, 41);
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked + .slider {
+    background-color: black;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 
 .title {
@@ -143,13 +222,16 @@ h5{
     padding: 200px 100px 200px 500px;
 }
 
-.exp_pro {
+.exp {
     display: flex;
 }
 
-.formations {
-    width: 95%;
-    padding: 0px 0px 0px 50px
+.exp_form {
+    width: 50%;
+}
+
+.exp_stages {
+    width: 50%;
 }
 
 .comp {
