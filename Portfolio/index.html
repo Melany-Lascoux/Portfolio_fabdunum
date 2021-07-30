@@ -18,18 +18,44 @@
                         <input type="checkbox" id="checkbox" />
                         <div class="slider round"></div>
                     </label>
-                    <em>Dark Mod</em>
+                    <em>Dark Mode</em>
                 </div>
     </div>
 
     <div class="navbar">
-        <a href="#accueil" >Accueil</a>
-        <a href="#experiences">Expériences</a>
-        <a href="#competences">Compétences</a>
-        <a href="#curriculum vitae">CV</a>
-        <a href="#projets">Projets</a>
+
+        <a href="#accueil">Accueil</a>
+
+        <div class="subnav">
+            <button class="subnavbtn">Expériences <i class="fa fa-angle-down"></i></button>
+            <div class="subnav-content">
+                <a href="#experiences">Expériences professionnelles</a>
+                <a href="#etudes">Etudes et diplômes</a>
+            </div>
+        </div>
+
+        <div class="subnav">
+            <button class="subnavbtn">Compétences <i class="fa fa-angle-down"></i></button>
+            <div class="subnav-content">
+                <a href="#competences">Compétences</a>
+                <a href="#skills">Soft skills</a>
+            </div>
+        </div> 
+
+        <a href="#curriculum_vitae">CV</a>
+
+        <div class="subnav">
+            <button class="subnavbtn">Projets <i class="fa fa-angle-down"></i></button>
+            <div class="subnav-content">
+                <a href="#montage_pc">Montage PC</a>
+                <a href="#site">Site internet</a>
+                <a href="#projets_pro">Projets professionnels</a>
+            </div>
+        </div> 
+
         <a href="#hobbies">Hobbies</a>
         <a href="#contact" class="right">Contact</a>
+
     </div>
 
     <div id="accueil">
@@ -81,16 +107,21 @@
         </div>            
 <br>
 <br>
-    <div id="etudes">
-        <div class="parties">
-            <h3>~ Etudes et Diplômes ~</h3>
-        </div>
-            <h5>Université de Poitiers (86)</h5>
-                <ul>
-                    <li>Master 1 Mondes Médiévaux (2018-2019)</li>
-                    <li>Licence Histoire de l'Art et Archéologie - spécialité Archéologie (2018).</li>
-                    <li>Psychologie (2011-2014)</li>
-                </ul>
+        <div id="etudes">
+            <div class="parties">
+                <h3>~ Etudes et Diplômes ~</h3>
+            </div>
+            <div class="etudes">
+            <img src="images/image_etudes.jpg" alt="bibliotheque" height="400" width="500">
+                <div class="etudes_liste">
+                    <h5>Université de Poitiers (86)</h5>
+                        <ul>
+                            <li>Master 1 Mondes Médiévaux (2018-2019)</li>
+                            <li>Licence Histoire de l'Art et Archéologie - spécialité Archéologie (2018).</li>
+                            <li>Psychologie (2011-2014)</li>
+                        </ul>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -99,41 +130,44 @@
             <h3>~ Compétences ~</h3>
         </div>
             <div class="comp">
-                <img src="images/image_etudes.jpg" alt="bibliotheque" height="400" width="500">
-                <div class="comp_liste">
-                    <ul>
-                        <li>HTML - CSS - PHP - JavaScript.</li>
-                        <li>GIT - BASH - DOCKER.</li>
-                        <li>CMS (WordPress).</li>
-                        <li>Logiciels de bureautique (Word, Powerpoint).</li>
-                        <li>Logiciels de création (Canva, Google Site).</li>
-                        <li>Anglais A2</li>
-                    </ul>
+                <img src="images/image_comp.jpg" alt="bibliotheque" height="400" width="500">
+                <div class="container_comp">
+                    <h6>Skills Bar</h6>
+                        <div class="bar learning" data-skill="PHP/JavaScript"></div>
+                        <div class="bar learning" data-skill="BASH/DOCKER"></div>
+                        <div class="bar learning" data-skill="WordPress"></div>
+                        <div class="bar back basic" data-skill="HTML/CSS"></div>
+                        <div class="bar back basic" data-skill="GIT"></div>
+                        <div class="bar front advanced" data-skill="Word/PowerPoint"></div>
+                        <div class="bar front advanced" data-skill="Canva"></div>
+                        <!-- <div class="bar front expert" data-skill="HTML5"></div> -->
                 </div>
             </div>
-            <div class="parties">
-                <h3>~ Soft Skills ~</h3>
-            </div>
-            <div class="comp_left">
-                <img src="images/img_skills.jpg" alt="coworking" height="400" width="500">
-                    <div class="skills_left">
-                        <ul>
-                            <li>Travail d'équipe</li>
-                            <li>Sens de l'organisation</li>
-                            <li>Gestion de projet</li>
-                            <li>Résolution de problèmes</li>
-                            <li>Créativité</li>
-                        </ul>
-                    </div>
-                    <div class="skills_right">
-                        <ul>
-                            <li>Curiosité intellectuelle</li>
-                            <li>Rédaction</li>
-                            <li>Recherches</li>
-                            <li>Esprit critique</li>
-                        </ul>
-                    </div>
+            <div id="skills">
+                <div class="parties">
+                    <h3>~ Soft Skills ~</h3>
                 </div>
+                <div class="comp_left">
+                    <img src="images/img_skills.jpg" alt="coworking" height="400" width="500">
+                        <div class="skills_left">
+                            <ul>
+                                <li>Travail d'équipe</li>
+                                <li>Sens de l'organisation</li>
+                                <li>Gestion de projet</li>
+                                <li>Résolution de problèmes</li>
+                                <li>Créativité</li>
+                            </ul>
+                        </div>
+                        <div class="skills_right">
+                            <ul>
+                                <li>Curiosité intellectuelle</li>
+                                <li>Rédaction</li>
+                                <li>Recherches</li>
+                                <li>Esprit critique</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
         </div>          
 
     <div id="curriculum vitae">
@@ -153,6 +187,7 @@
         <div class="parties">
             <h3>~ Projets ~</h3>
         </div>
+        <div id="montage_pc">
             <h4>Montage PC</h4>
                 <div class="paragraphe">
                     <p>En mars 2021 j'ai monté ma propre tour pc avec la configuration suivante.</p>
@@ -174,7 +209,9 @@
                         </ul>
                     </div>
                 </div>
+            </div>
 
+            <div id="site">
             <h4>Création d'un site internet dédié aux survival horror</h4>
                 <div class="guide">
                     <ul>
@@ -185,12 +222,15 @@
                         <li>Un lien sera mis à disposition sur mon portfolio.</li>
                     </ul>
                 </div>
-            <h4>Projets professionnels</h4>
-                <ul>
-                    <li>Travailler dans le domaine des <b>jeux vidéo</b>, de l'<b>intelligence artificielle</b> ou du <b>développement web</b>.</li>
-                    <li>Suivre une formation en alternance dans l'un de ces domaines.</li>
-                    <li>Créer des jeux/applications/logiciels qui améliore la vie des individus.</li>
-                </ul>
+            </div>
+            <div id="projets_pro">
+                <h4>Projets professionnels</h4>
+                    <ul>
+                        <li>Travailler dans le domaine des <b>jeux vidéo</b>, de l'<b>intelligence artificielle</b> ou du <b>développement web</b>.</li>
+                        <li>Suivre une formation en alternance dans l'un de ces domaines.</li>
+                        <li>Créer des jeux/applications/logiciels qui améliore la vie des individus.</li>
+                    </ul>
+            </div>
     </div>
 
     <div id="hobbies">
@@ -318,10 +358,6 @@
                         <option value="male">Homme</option>
                         <option value="other">Autre</option>
                     </select>            
-                </div>
-                <div class="form_date">
-                    <label for="datemax">Date de naissance :</label>
-                    <input type="date" id="date_min_max" name="date_min_max" min="1900-12-31" max="2020-12-31">
                 </div>
                 <div class="form_message">
                     <label for="message">Message :</label><br>

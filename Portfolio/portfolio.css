@@ -25,7 +25,7 @@ body {
     --secondary-color: #a0a4b1;
     --font-color: #e1e1ff;
     --bg-color: #09090f;
-    --heading-color: #959aa8;
+    --heading-color: #959aa8
 }
 
 em {
@@ -102,7 +102,7 @@ input:checked + .slider:before {
 
 .navbar {
     overflow: hidden;
-    background-color: black;
+    background-color: black; 
     position: fixed;
     z-index: 10;
     top: 0;
@@ -111,13 +111,13 @@ input:checked + .slider:before {
 
 .navbar a {
     float: left;
-    display: block;
     color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
     font-size: 30px;
     font-family: Zilla Slab, 'Times New Roman', Times, serif;
-    text-align: center;
     padding: 14px 27px;
-    text-decoration: none;
     transition: all 0.8s ease;
 }
 
@@ -125,10 +125,52 @@ input:checked + .slider:before {
     float: right;
 }
 
-.navbar a:hover {
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 30px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 27px;
+    background-color: inherit;
+    font-family: Zilla Slab, 'Times New Roman', Times, serif;
+    transition: all 0.8s ease;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
     background-color: rgb(136, 22, 41);
     text-shadow: 2px 1px 1px white;
     color: black;
+}
+
+.subnav-content {
+    display: none;
+    position: fixed;
+    left: 0;
+    background-color: rgb(136, 22, 41);
+    width: 100%;
+    z-index: 1;
+    border-bottom: 5px solid black;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: rgb(136, 22, 41);
+    text-shadow: 2px 1px 1px white;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
 }
 
 .navbar a.active {
@@ -153,9 +195,8 @@ h2{
 h4{
     font-size: 30px;
     font-family: Encode Sans SC, 'Times New Roman', Times, serif;
-    padding: 50px 50px 0px 50px;
+    padding: 20px 50px 0px 50px;
     text-align: left;
-    /* text-shadow: 2px 2px 2px rgb(136, 22, 41); */
     text-decoration-line: underline;
 }
 
@@ -163,8 +204,17 @@ h5{
     font-size: 28px;
     font-family: Encode Sans SC;
     text-align: justify;
-    padding: 50px 50px 0px 50px;
+    padding: 20px 50px 0px 50px;
     text-decoration-line: underline;
+}
+
+h6 {
+    font-size: 50px;
+    font-family: Merienda, 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 4px 3px 2px black;
+    padding: 0px 0px 20px 0px;
+    margin: 0;
 }
 
 .partie_accueil {
@@ -194,7 +244,7 @@ h5{
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 4px 8px 0 rgb(136, 22, 41);
     transition: 0.3s;
     width: 300px;
     height: 530px;
@@ -204,7 +254,7 @@ h5{
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 8px 16px 0 rgb(136, 22, 41);
 }
 
 .container {
@@ -234,20 +284,105 @@ h5{
     width: 50%;
 }
 
-.comp {
+.etudes {
     display: flex;
-    padding: 50px 50px 0px 90px;
+    padding: 40px 50px 0px 90px;
 }
 
-.comp_liste {
-    display: block;
-    width: 50%;
-    padding-top: 40px;
+.etudes_liste {
+    width: 70%;
+    padding-top: 0;
+}
+
+.comp {
+    display: flex;
+    padding: 40px 50px 0px 90px;
 }
 
 .comp_left {
     display: flex;
     padding: 50px 50px 0px 90px;
+}
+
+.container_comp {
+    width: 50%;
+    margin: 0 auto;
+}
+
+@keyframes load{
+    from {
+        width: 0%
+    }
+}
+@-webkit-keyframes load{
+    from {
+        width: 0;
+    }
+}
+@-moz-keyframes load{
+    from {
+        width: 0%
+    }
+}
+@-o-keyframes load{
+    from {
+        width: 0%
+    }
+}
+
+.bar{
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+    font-family: Zilla Slab, 'Times New Roman', Times, serif;
+}
+
+.bar::before{
+    content:  attr(data-skill);
+    background-color: lightblue;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+}
+
+.bar.back::before{
+    background-color: rgb(84, 233, 84);
+}
+
+.bar.front.advanced::before{
+    background-color: orange;
+}
+
+.bar.front.expert::before{
+    background-color: red;
+}
+
+.bar.learning::before{
+    width: calc(20% - 10px);
+}
+
+.bar.basic::before{
+    width: calc(40% - 10px);
+}
+
+.bar.intermediate::before{
+    width: calc(60% - 10px);
+}
+
+.bar.advanced::before{
+    width: calc(80% - 10px);
+}
+
+.bar.expert::before{
+    width: calc(100% - 10px);
 }
 
 .skills_left {
@@ -425,11 +560,6 @@ p {
 .form_gender{
     padding: 10px;
     padding-top: 20px;
-    text-align: center;
-}
-
-.form_date{
-    padding: 10px;
     text-align: center;
 }
 
