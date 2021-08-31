@@ -211,7 +211,7 @@ h5{
 h6 {
     font-size: 50px;
     font-family: Merienda, 'Times New Roman', Times, serif;
-    color: white;
+    color: rgb(136, 22, 41);
     text-shadow: 4px 3px 2px black;
     padding: 0px 0px 20px 0px;
     margin: 0;
@@ -594,7 +594,7 @@ img {
 
 .icon-bar {
     position: fixed;
-    top: 85%;
+    top: 82%;
     right: 0;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -615,13 +615,18 @@ img {
     color: black;
 }
 
+.facebook {
+    background: rgb(66,103,178);
+    color: white;
+}
+
 .twitter {
     background: #55ACEE;
     color: white;
 }
 
-.google {
-    background: #dd4b39;
+.instagram {
+    background: rgb(251, 57, 88);
     color: white;
 }
 
