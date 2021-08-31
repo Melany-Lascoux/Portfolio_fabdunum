@@ -9,9 +9,10 @@ Elaboration d'un portfolio (CV, lettre de motivation, compétences, etc.) en HTM
 
 ## Outils
 Visual Studio Code
+Netlify
 
 ## Version
-Dernière version : 30/09/2021
+Dernière version : 31/08/2021
 
 ## Hébergement
 Netlify : https://portfolio-melany-lascoux.netlify.app/
