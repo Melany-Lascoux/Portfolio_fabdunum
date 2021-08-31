@@ -8,10 +8,11 @@ Elaboration d'un portfolio (CV, lettre de motivation, compétences, etc.) en HTM
 4. Les images et photos utilisées pour la création du site.
 
 ## Outils
-Visual Studio Code
+1. Visual Studio Code
+2. Netlify
 
 ## Version
-Dernière version : 30/09/2021
+Dernière version : 31/08/2021
 
 ## Hébergement
 Netlify : https://portfolio-melany-lascoux.netlify.app/
