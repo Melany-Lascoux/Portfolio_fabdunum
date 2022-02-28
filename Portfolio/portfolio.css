@@ -382,7 +382,49 @@
       text-align: justify;
       margin-bottom: var(--m-1);
     }
-    /*========== Services ==========*/
+
+    /*========== Quality ==========*/
+    .quality .quality-item
+    {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      display: flex;
+    }
+    .quality .quality-item .quality-item-inner
+    {
+      border-radius: var(--border-radius);
+      padding: var(--card-padding);
+      text-align: center;
+      transform: translateY(0);
+      transition: 0.3s;
+    }
+    .quality .quality-item .quality-item-inner:hover{
+      transform: translateY(-0.625rem);
+    }
+    .quality .quality-item img
+    {
+      margin-bottom: var(--m-0-75);
+    }
+    .quality-item h3
+    {
+      margin-bottom: var(--m-0-5);
+      color: #fff;
+    }
+    .quality-item p
+    {
+      color: #fff;
+    }
+    .text
+    {
+      text-align: center;
+      margin-top: var(--m-1-5);
+    }
+    .text a
+    {
+      color: var(--color-primary);
+    }
+
+    /*========== Skills ==========*/
     .skills .skills-item
     {
       flex: 0 0 33.33%;
