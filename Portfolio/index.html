@@ -1,489 +1,330 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zilla Slab|Merienda|Philosopher|Encode Sans SC|Caveat">
-    <link href="portfolio.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Portfolio de Mélany Lascoux</title>
+    <!--=============== LINE ICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="portfolio.css">
+
+    <title>Responsive portfolio website - CrypticalCoder</title>
 </head>
 <body>
-    <div class="title">
-        <h1>Mélany Lascoux</h1>
-            <h2>Bienvenue sur mon Portfolio</h2>
-                <div class="theme-switch-wrapper">
-                    <label class="theme-switch" for="checkbox">
-                        <input type="checkbox" id="checkbox" />
-                        <div class="slider round"></div>
-                    </label>
-                    <em>Dark Mode</em>
-                </div>
-    </div>
 
-    <div class="navbar">
-
-        <a href="#accueil">Accueil</a>
-
-        <div class="subnav">
-            <button class="subnavbtn">Expériences <i class="fa fa-angle-down"></i></button>
-            <div class="subnav-content">
-                <a href="#experiences">Expériences professionnelles</a>
-                <a href="#etudes">Etudes et diplômes</a>
+    <!--=============== HEADER ===============-->
+<header class="header" id="header">
+    <!-- nav -->
+    <nav class="nav container padd-15">
+        <!-- nav logo -->
+        <a href="#" class="nav-logo">
+            <h2>ML</h2>
+        </a>
+        <!-- nav menu -->
+        <div class="nav-menu" id="nav-menu">
+            <!-- nav list -->
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#hobbies" class="nav-link">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- nav btn -->
+        <div class="nav-btns">
+            <!-- theme change btn -->
+            <i class="lni lni-pallet change-theme" id="theme-button"></i>
+            <!-- toggle btn -->
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="lni lni-grid-alt"></i>
             </div>
         </div>
+    </nav>
+</header>
 
-        <div class="subnav">
-            <button class="subnavbtn">Compétences <i class="fa fa-angle-down"></i></button>
-            <div class="subnav-content">
-                <a href="#competences">Compétences</a>
-                <a href="#skills">Soft skills</a>
-            </div>
-        </div> 
+    <!--=============== MAIN ===============-->
+    <main class="main-content">
 
-        <a href="#curriculum_vitae">CV</a>
-
-        <div class="subnav">
-            <button class="subnavbtn">Projets <i class="fa fa-angle-down"></i></button>
-            <div class="subnav-content">
-                <a href="#montage_pc">Montage PC</a>
-                <a href="#site">Site internet</a>
-                <a href="#projets_pro">Projets professionnels</a>
-            </div>
-        </div> 
-
-        <a href="#hobbies">Hobbies</a>
-        <a href="#contact" class="right">Contact</a>
-
-    </div>
-
-    <div id="accueil">
-        <div class="partie_accueil">
-            <h3>~ Accueil ~</h3>
-        </div>    
-            <div class="accueil_left">
-                <div class="card">
-                    <img src="images/photo_profil.jpg" alt="photo" height="400" width="300">
-                        <div class="container">
-                            <p><b>Mélany Lascoux</b></p> 
-                            <p>Développeuse web junior</p> 
-                        </div>
-                </div>
-            </div>
-            <div class="accueil_right">
-                <cite>"Je suis peut être petite, mais mon esprit est aussi grand que l'univers." - Yoko Ono</cite>
-                <p>Je m'appelle <b>Mélany Lascoux</b>, j'ai 27 ans et je suis <b>Développeuse Web Junior</b>.<br>
-                    Pour la <b>rentrée 2022</b>, je souhaite m'inscrire à la <b>licence en alternance en développement de jeux vidéo</b> proposé par le <b>CNAM de Nouvelle Aquitaine</b>. Je recherche donc une entreprise pour effectuer cette alternance.</p><br>
-            </div>
-                <div class="personnalite">
-                    <div class="qualites">
-                        <p><b><u>Mes qualités</u> :</b><br>
-                            <ul>
-                                <li>Curieuse</li>
-                                <li>Persévérante</li>
-                                <li>Organisée</li>
-                                <li>Ouverte d'esprit</li>
-                                <li>Créative</li>
-                                <li>Calme</li>
-                            </ul>
-                        </div>
-                    <div class="valeurs">
-                        <p><b><u>Mes valeurs</u> :</b><br>
-                            <ul>
-                                <li>Le respect d'autrui</li>
-                                <li>L'entraide</li>
-                                <li>Une ambiance de travail saine</li>
-                                <li>La bienveillance</li>
-                                <li>L'éthique</li>
-                                <li>Le respect de la nature</li>
-                            </ul>
-                    </div>
-                </div>
-    </div>
-    
-    <div id="experiences">
-        <div class="parties">
-            <h3>~ Expériences Professionnelles ~</h3>
-        </div>
-        <div class="exp_pro">
-            <div class="formations">
-                <div class="exp">
-                    <div class="exp_form">
-                        <h5>Formations</h5>
-                            <ul>
-                                <li>Depuis le <b>17 Mai 2021</b> : Développement web à la Fabrique du Numérique : HTML - CSS - PHP - JavaScript - BASH - DOCKER - GIT.</li>
-                                <li><b>Novembre 2020</b> : La Fabrique du Numérique : Création d'un Portfolio sur Google Site.</li>
-                            </ul>
-                    </div>
-                    <div class="exp_stages">
-                        <h5>Fouilles archéologiques</h5>
-                            <ul>
-                                <li><b>Juillet 2019</b> - CESCM de Poitiers - Fouilles archéologique du château du Haut-Clairvaux, à Scorbé-Clairvaux.</li>
-                                <li><b>Octobre 2018</b> - CESCM de Poitiers - Prospection pédestre dans la région des Sables-d'Olonne en Vendée.</li>
-                                <li><b>Juillet 2018</b> - CESCM de Poitiers - Fouilles au pied de la Tour de Broue, à Saint-Sornin en Charente-Maritime.</li>
-                                <li><b>Août 2017</b> - Département de la Charente - Fouilles d'un site gallo-romain, à Saint-Cybardeaux en Charente.</li>
-                                <li><b>Août 2016</b> - Hadès Archéologie - Fouilles de l'abbaye de Nanteuil-en-Vallée en Charente.</li>
-                            </ul>
-                    </div>
-                </div>
-            </div>        
-        </div>            
-<br>
-<br>
-        <div id="etudes">
-            <div class="parties">
-                <h3>~ Etudes et Diplômes ~</h3>
-            </div>
-            <div class="etudes">
-            <img src="images/image_etudes.jpg" alt="bibliotheque" height="400" width="500">
-                <div class="etudes_liste">
-                    <h5>Université de Poitiers (86)</h5>
-                        <ul>
-                            <li>Master 1 Mondes Médiévaux (2018-2019)</li>
-                            <li>Licence Histoire de l'Art et Archéologie - spécialité Archéologie (2018).</li>
-                            <li>Psychologie (2011-2014)</li>
-                        </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="competences">
-        <div class="parties">
-            <h3>~ Compétences ~</h3>
-        </div>
-            <div class="comp">
-                <img src="images/image_comp.jpg" alt="bibliotheque" height="400" width="500">
-                <div class="container_comp">
-                    <h6>Skills Bar</h6>
-                        <div class="bar learning" data-skill="PHP/JavaScript"></div>
-                        <div class="bar learning" data-skill="BASH/DOCKER"></div>
-                        <div class="bar learning" data-skill="WordPress"></div>
-                        <div class="bar back basic" data-skill="HTML/CSS"></div>
-                        <div class="bar back basic" data-skill="GIT"></div>
-                        <div class="bar front advanced" data-skill="Word/PowerPoint"></div>
-                        <div class="bar front advanced" data-skill="Canva"></div>
-                        <!-- <div class="bar front expert" data-skill="HTML5"></div> -->
-                </div>
-            </div>
-            <div id="skills">
-                <div class="parties">
-                    <h3>~ Soft Skills ~</h3>
-                </div>
-                <div class="comp_left">
-                    <img src="images/img_skills.jpg" alt="coworking" height="400" width="500">
-                        <div class="skills_left">
-                            <ul>
-                                <li>Travail d'équipe</li>
-                                <li>Sens de l'organisation</li>
-                                <li>Gestion de projet</li>
-                                <li>Résolution de problèmes</li>
-                                <li>Créativité</li>
-                            </ul>
-                        </div>
-                        <div class="skills_right">
-                            <ul>
-                                <li>Curiosité intellectuelle</li>
-                                <li>Rédaction</li>
-                                <li>Recherches</li>
-                                <li>Esprit critique</li>
-                            </ul>
-                        </div>
-                </div>
-            </div>
-        </div>          
-
-    <div id="curriculum_vitae">
-        <div class="parties">
-            <h3>Curriculum Vitae</h3>
-        </div>
-            <div class="documents">
-                <div class="cv">
-                    <iframe src="images/cv_melany_lascoux.pdf" frameborder="0" height="600" width="400"></iframe>
-                </div>
-                <div class="lm">    
-                    <iframe src="images/lm_melany_lascoux.pdf" frameborder="0" height="600" width="400"></iframe>
-                </div>
-        </div>
-    </div>
-    <div id="projets">
-        <div class="parties">
-            <h3>~ Projets ~</h3>
-        </div>
-        <div id="montage_pc">
-            <h4>Montage PC</h4>
-                <div class="paragraphe">
-                    <p>En mars 2021 j'ai monté ma propre tour pc avec la configuration suivante.</p>
-                    <p>Avant de me lancer, j'ai regardé de nombreux tutos sur internet. Je me suis également renseignée sur la compatibilité des pièces.</p>
-                    <p>Cela s'est révélé moins compliqué que je ne le pensais, et maintenant j'ai un ordinateur qui fonctionne du tonnerre !</p>
-                </div>
-                <div class="montage_pc">
-                    <img src="images/image_pc.jpg" height="800" width="750" >
-                    <div class="pieces_liste">
-                        <ul>
-                            <li>Western digital - WD Caviar Blue Disque Dur Interne 3,5'' - SATA - 1000 GB.</li>
-                            <li>PNY XLR8 CS3030 M.2 NVMe SSD Interne 500GB - Jusqu'à 3500 Mo/s.</li>
-                            <li>AMD Ryzen 7 3700X, AM4, Zen 2, 8 Core, 16 Thread, 3.6GHz, 4.4GHz Turbo, 32MB L3, PCIe 4.0, 65W, CPU, Wraith Prism.</li>
-                            <li>MSI X570-A Pro (Prise AM4).</li>
-                            <li>Corsair RM650, RM Series Alimentation PC (Entièrement Modulaire ATX, 80 Plus Gold, 650 Watt) - Noir (EU).</li>
-                            <li>HyperX FURY Black HX432C16FB3K2/16 Mémoire 16Go Kit*(2x8Go) 3200MHz DDR4 CL16 DIMM1Rx8.</li>
-                            <li>DEEPCOOL Macube 550 WH, version blanche, boîtier tour complet, carte mère E-ATX et processeur graphique pris en charge de 420 mm, avec acier SGCC de 0,8mm.</li>
-                            <li>Corsair iCUE SP120 RGB PRO, 120mm LED RGB, Silencieux, Flux d'air élevé, Ventilateur de Refroidissement (Triple Pack).</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div id="site">
-            <h4>Création d'un site internet dédié aux survival horror</h4>
-                <div class="guide">
-                    <ul>
-                        <li>Avec une amie, nous avons un projet de création de site internet sous la forme d'un guide de survie dans les jeux vidéo de style survival horror.</li>
-                        <li>Nous comptons construire notre site grâce à un CMS.</li>
-                        <li>Les images mises en ligne proviendront de nos propres parties de jeux vidéo.</li>
-                        <li>Il est actuellement en construction, il faudra donc attendre un peu.</li>
-                        <li>Un lien sera mis à disposition sur mon portfolio.</li>
+        <!--=============== HOME ===============-->
+        <section class="home" id="home">
+            <div class="container">
+                <!-- intro -->
+                <div class="intro">
+                    <!-- avatar image -->
+                    <img src="assets/img/avatar.png" alt="avatar">
+                    <!-- info -->
+                    <h1>Mélany Lascoux</h1>
+                    <span>Je suis <span class="info-text">Développeuse web junior</span></span>
+                    <!-- social icons -->
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="lni  lni-twitter-original"></i></a></li>
+                        <li><a href="#"><i class="lni  lni-linkedin-original"></i></a></li>
+                        <li><a href="#"><i class="lni  lni-github-original"></i></a></li>
                     </ul>
+                    <!-- button -->
+                    <div>
+                        <a href="#" class="btn btn-default">Suivez moi</a>
+                    </div>
+                    <!-- scroll down mouse wheel -->
+                    <div class="scroll-down">
+                        <a href="#" class="mouse-wrapper">
+                            <span>Scroll Down</span>
+                            <span class="mouse">
+                                <span class="wheel"></span>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div id="projets_pro">
-                <h4>Projets professionnels</h4>
-                    <ul>
-                        <li>Travailler dans le domaine des <b>jeux vidéo</b>, de l'<b>intelligence artificielle</b> ou du <b>développement web</b>.</li>
-                        <li>Suivre une formation en alternance dans l'un de ces domaines.</li>
-                        <li>Créer des jeux/applications/logiciels qui améliore la vie des individus.</li>
-                    </ul>
+        </section>
+
+        <!--=============== About ===============-->
+        <section class="about section" id="about">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-tittle padd-15">About Me</h2>
+                <div class="row">
+                    <div class="about-img padd-15">
+                        <!-- avatar img -->
+                        <img src="assets/img/avatar.png" alt="avatar-2">
+                    </div>
+                    <div class="about content padd-15">
+                        <div class="rounded">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <!-- about text -->
+                                    <cite>"Je suis peut être petite, mais mon esprit est aussi grand que l'univers." - Yoko Ono</cite>
+                                    <p>Je m'appelle Mélany Lascoux, j'ai 27 ans et je suis Développeuse Web Junior.
+                                        Pour mai 2022, je souhaite m'inscrire à la formation en Alternance de Développement web proposé par ARINFO à Niort.
+                                        Je recherche donc une entreprise pour effectuer cette alternance.</p>
+                                    <div>
+                                        <a href="#" class="btn btn-default">Télécharger CV</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-    </div>
+        </section>
 
-    <div id="hobbies">
-        <div class="parties">
-            <h3>~ Hobbies ~</h3>
-        </div>
-            <h4>Jeux vidéo</h4>
-                <div class="slideshow-container">
-                    <div class="mySlides1">
-                        <img src="images/image_rpg.jpg" width="1000" height="640">
-                        <div class="text_img">
-                            <b>RPG</b><br>
-                            Be yourself
+        <!--=============== Skills ===============-->
+        <section class="skills section">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Compétences</h2>
+                <div class="row">
+                    <!-- service item -->
+                    <div class="skills-item padd-15">
+                        <div class="skills-item-inner" style="background: rgb(108,108,229);">
+                            <img src="" alt="">
+                            <h3>Développement web</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur assumenda delectus non dolorum in soluta aperiam hic fugit. Illo, voluptas? Consequuntur nihil aut quisquam at inventore error blanditiis nostrum natus?</p>
                         </div>
                     </div>
-
-                    <div class="mySlides1">
-                        <img src="images/image_mondes_ouverts.jpg" width="1000" height="640">
-                        <div class="text_img">
-                            <b>Monde Ouvert</b><br>
-                            I'm free !
+                    <div class="skills-item padd-15">
+                        <div class="skills-item-inner" style="background: rgb(249,215,76);">
+                            <img src="" alt="">
+                            <h3>Soft Skills</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur assumenda delectus non dolorum in soluta aperiam hic fugit. Illo, voluptas? Consequuntur nihil aut quisquam at inventore error blanditiis nostrum natus?</p>
                         </div>
                     </div>
-
-                    <div class="mySlides1">
-                        <img src="images/image_strategie.jpg" width="1000" height="640">
-                        <div class="text_img">
-                            <b>Stratégie</b><br>
-                            Faisons ça bien !
+                    <div class="skills-item padd-15">
+                        <div class="skills-item-inner" style="background: rgb(249,123,139);">
+                            <img src="" alt="">
+                            <h3>Autres</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur assumenda delectus non dolorum in soluta aperiam hic fugit. Illo, voluptas? Consequuntur nihil aut quisquam at inventore error blanditiis nostrum natus?</p>
                         </div>
                     </div>
-
-                    <div class="mySlides1">
-                        <img src="images/image_choix_multiples.jpg" width="1000" height="640">
-                        <div class="text_img">
-                            <b>Choix multiples</b><br>
-                            C'est moi qui décide !
-                        </div>
-                    </div>
-
-                    <div class="mySlides1">
-                        <img src="images/image_simulation.jpg" width="1000" height="640">
-                        <div class="text_img">
-                            <b>Simulation</b><br>
-                            Se montrer créatif
-                        </div>
-                    </div>
-
-                    <div class="mySlides1">
-                        <img src="images/image_horror.jpg" width="1000" height="640">
-                        <div class="text_img">
-                            <b>Horreur</b><br>
-                            Fait moi peur !
-                        </div>
-                    </div>
-
-                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                 </div>
-        </div>        
-
-            <h4>Littérature</h4>
-                <div class="slideshow-container2">
-                    <div class="mySlides2">
-                        <img src="images/image_science_fiction.jpg" width="1000" height="640">
-                        <div class="text_img">
-                            <b>Science-Fiction</b>
-                        </div>
-                    </div>
-
-                    <div class="mySlides2">
-                        <img src="images/image_fantasy.jpg" width="1000" height="640">
-                        <div class="text_img">
-                            <b>Fantasy</b>
-                        </div>
-                    </div>
-
-                    <div class="mySlides2">
-                        <img src="images/image_polar.jpg" width="1000" height="640">
-                        <div class="text_img">
-                            <b>Policier</b>
-                        </div>
-                    </div>
-
-                    <div class="mySlides2">
-                        <img src="images/image_thriller.jpg" width="1000" height="640">
-                        <div class="text_img">
-                            <b>Thriller</b>
-                        </div>
-                    </div>
-
-                    <div class="mySlides2">
-                        <img src="images/image_romance.jpg" width="1000" height="640">
-                        <div class="text_img">
-                            <b>Romance</b>
-                        </div>
-                    </div>
-
-                    <a class="prev2" onclick="plusSlides2(-1, 0)">&#10094;</a>
-                    <a class="next2" onclick="plusSlides2(1, 0)">&#10095;</a>
+                <div class="text padd-15">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quas temporibus obcaecati autem animi mollitia dicta pariatur quasi error commodi sed harum, et eos dolorem aut in. Culpa, quasi facilis?</p>
                 </div>
-    </div>
-
-    <div id="contact">
-        <div class="parties">
-            <h3>~ Contact ~</h3>
-        </div>   
-            <form name="contact" method="POST" data-netlify="true"> 
-                <div class="form_nom">
-                    <label for="prenom">Prénom :</label>
-                    <input type="text" id="prenom" name="prenom">
-                    <label for="nom:">Nom :</label>
-                    <input type="text" id="nom" name="nom">
-                </div>
-                <div class="form_contact">
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email">
-                    <label for="phone">Téléphone :</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                <div class="form_gender">
-                    <label for="sex_select">Genre :</label>
-                    <select name="gender" id="sex_select">
-                        <option value="female">Femme</option>
-                        <option value="male">Homme</option>
-                        <option value="other">Autre</option>
-                    </select>            
-                </div>
-                <div class="form_message">
-                    <label for="message">Message :</label><br>
-                    <textarea name="message" rows="5" cols="70"></textarea>
-                </div>
-                <div class="form_file">
-                    <label for="file">Charger document :</label>
-                    <input type="file"  id="file"   name="file">
-                </div>
-                <div class="form_boutons">
-                    <input type="submit" value="Envoyez">
-                    <input type="reset" value="Réinitialiser">
-        </form>
-    </div>    
-
-    <div class="footer">
-        <p><b>Email :</b> melany.lascoux@gmail.com - <b>Tél :</b> 06 59 61 49 47 - <b> Adresse :</b> 86000 Poitiers</p><br>
-        <p>© 2021 by Mélany Lascoux</p>
-            <div class="icon-bar">
-                <a href="https://www.facebook.com/melany.lascoux/" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="https://twitter.com/LascouxMelany" class="twitter"><i class="fa fa-twitter"></i></a> 
-                <a href="https://www.instagram.com/melanylascoux/?hl=fr" class="instagram"><i class="fa fa-instagram"></i></a> 
-                <a href="https://www.linkedin.com/in/m%C3%A9lany-lascoux-234a7b1b8/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/Melany-Lascoux" class="github"><i class="fa fa-github"></i></a>
             </div>
-    </div>
+        </section>
 
-    <script>
+        <!--=============== Experience ===============-->
+        <section class="section" id="experience">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Expériences</h2>
+                <div class="row">
+                    <!-- studies -->
+                    <div class="studies padd-15">Etudes</div>
+                    <div class="row">
+                        <div class="timeline-box">
+                            <div class="timeline">
+                                <!-- timeline item -->
+                                <div class="timeline-item">
+                                    <i class="lni lni-graduation timeline-icon"></i>
+                                    <h3 class="timeline-date">
+                                        <i class="lni lni-calendar"></i> 2019 - present
+                                    </h3>
+                                    <h3 class="timeline-title">Dipômes</h3>
+                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero vitae saepe facere earum sapiente quae placeat rerum magnam quod. Laborum esse enim unde aspernatur blanditiis suscipit sunt quae necessitatibus.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <i class="lni lni-graduation timeline-icon"></i>
+                                    <h3 class="timeline-date">
+                                        <i class="lni lni-calendar"></i> 2019 - present
+                                    </h3>
+                                    <h3 class="timeline-title">Dipômes</h3>
+                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero vitae saepe facere earum sapiente quae placeat rerum magnam quod. Laborum esse enim unde aspernatur blanditiis suscipit sunt quae necessitatibus.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <i class="lni lni-graduation timeline-icon"></i>
+                                    <h3 class="timeline-date">
+                                        <i class="lni lni-calendar"></i> 2019 - present
+                                    </h3>
+                                    <h3 class="timeline-title">Dipômes</h3>
+                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero vitae saepe facere earum sapiente quae placeat rerum magnam quod. Laborum esse enim unde aspernatur blanditiis suscipit sunt quae necessitatibus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- experiences -->
+                    <div class="experiences padd-15">
+                        <div class="row">
+                            <div class="timeline-box">
+                                <div class="timeline">
+                                    <!-- timeline item -->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-briefcase timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2019 - present
+                                        </h3>
+                                        <h3 class="timeline-title">Dipômes</h3>
+                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero vitae saepe facere earum sapiente quae placeat rerum magnam quod. Laborum esse enim unde aspernatur blanditiis suscipit sunt quae necessitatibus.</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <i class="lni lni-briefcase timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2019 - present
+                                        </h3>
+                                        <h3 class="timeline-title">Dipômes</h3>
+                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero vitae saepe facere earum sapiente quae placeat rerum magnam quod. Laborum esse enim unde aspernatur blanditiis suscipit sunt quae necessitatibus.</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <i class="lni lni-briefcase timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2019 - present
+                                        </h3>
+                                        <h3 class="timeline-title">Dipômes</h3>
+                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero vitae saepe facere earum sapiente quae placeat rerum magnam quod. Laborum esse enim unde aspernatur blanditiis suscipit sunt quae necessitatibus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!--=============== Hobbies ===============-->
+        <section class="section hobbies" id="hobbies">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Hobbies</h2>
+                <div class="row">
+                    <!-- hobbies -->
+                    <div class="hobbies-item">
+                        <img src="" alt="">
+                        <h3 class="plan">Jeux vidéo</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem molestiae modi commodi deleniti perspiciatis ullam quod possimus adipisci esse minima, sed temporibus quidem, ad nemo mollitia nam! Veritatis, vitae in!</p>
+                    </div>
+                    <div class="hobbies-item">
+                        <img src="" alt="">
+                        <h3 class="plan">Littérature</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem molestiae modi commodi deleniti perspiciatis ullam quod possimus adipisci esse minima, sed temporibus quidem, ad nemo mollitia nam! Veritatis, vitae in!</p>
+                    </div>
+                    <div class="hobbies-item">
+                        <img src="" alt="">
+                        <h3 class="plan">Psychologie</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem molestiae modi commodi deleniti perspiciatis ullam quod possimus adipisci esse minima, sed temporibus quidem, ad nemo mollitia nam! Veritatis, vitae in!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== Portfolio ===============-->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Portfolio</h2>
+                <div class="row">
+                    <div class="portfolio-filter padd-15">
+                        <div class="portfolio-filter-inner">
+                            <button type="button" class="active">Sites web</button>
+                            <button type="button">Maquettes</button>
+                            <button type="button">Montage PC</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- portfolio item -->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Sites web</span>
+                            <h3 class="portfolio-item-title">Projets réalisés</h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Maquettes</span>
+                            <h3 class="portfolio-item-title">Projets réalisés</h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Montages PC</span>
+                            <h3 class="portfolio-item-title">Projets réalisés</h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== Contact ===============-->
+        
+        <!--=============== Footer ===============-->
+        
+    </main>
+    <!--=============== Theme Customize ===============-->
     
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-        const currentTheme = localStorage.getItem('theme');
 
-        if (currentTheme) {
-            document.documentElement.setAttribute('data-theme', currentTheme);
-            if (currentTheme === 'dark') {
-                toggleSwitch.checked = true;
-            }
-        }
-
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-            }
-            else {        document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light');
-            }    
-        }
-
-        toggleSwitch.addEventListener('change', switchTheme, false);
-
-    </script>
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides1");
-
-                if (n > slides.length) {slideIndex = 1}    
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                }
-                slides[slideIndex-1].style.display = "block";  
-        }
-    </script>
-
-    <script>
-        var slideIndex2 = 1;
-        showSlides2(slideIndex2);
-        
-        function plusSlides2(m) {
-            showSlides2(slideIndex2 += m);
-        }
-        
-        function currentSlide2(m) {
-            showSlides2(slideIndex2 = m);
-        }
-
-        function showSlides2(m) {
-            var j;
-            var slides2 = document.getElementsByClassName("mySlides2");
-
-            if (m > slides2.length) {slideIndex2 = 1}    
-                if (m < 1) {slideIndex2 = slides2.length}
-                for (j = 0; j < slides2.length; j++) {
-                    slides2[j].style.display = "none";  
-                }
-                slides2[slideIndex2-1].style.display = "block";
-        }
-        </script>
-
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
