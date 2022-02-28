@@ -414,16 +414,7 @@
     {
       color: #fff;
     }
-    .text
-    {
-      text-align: center;
-      margin-top: var(--m-1-5);
-    }
-    .text a
-    {
-      color: var(--color-primary);
-    }
-
+    
     /*========== Skills ==========*/
     .skills .skills-item
     {
