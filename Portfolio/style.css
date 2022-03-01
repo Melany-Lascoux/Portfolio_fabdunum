@@ -171,7 +171,7 @@ h3 {
   font-weight: 600;
   letter-spacing: 0.125rem;
 }
-.nav-logo::after {
+/* .nav-logo::after {
   position: absolute;
   content: "";
   width: 0.3rem;
@@ -180,7 +180,7 @@ h3 {
   background-color: #f33e56;
   top: 56%;
   right: -0.25rem;
-}
+} */
 .nav-menu {
   margin-left: auto;
 }
