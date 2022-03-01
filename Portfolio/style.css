@@ -486,7 +486,7 @@ h3 {
   max-width: 100%;
 }
 .hobbies-item {
-  padding: 1.9rem 0.95rem;
+  padding: 10px 100px;
   background-color: #e9e7ee;
   text-align: center;
   border-radius: 1.25rem;
@@ -494,9 +494,6 @@ h3 {
 }
 .hobbies-item h3 {
   margin: 0.75rem 0;
-}
-.hobbies p {
-  margin-bottom: 1rem;
 }
 .hobbies-item .hobbies {
   font-size: 2.25rem;
