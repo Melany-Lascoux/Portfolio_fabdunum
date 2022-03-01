@@ -4,76 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--=============== LINE ICONS ===============-->
-    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+        <!--=============== LINE ICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="portfolio.css">
-
-    <title>Portfolio de Mélany Lascoux</title>
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-
-    <!--=============== HEADER ===============-->
-<header class="header" id="header">
-    <!-- nav -->
-    <nav class="nav container padd-15">
-        <!-- nav logo -->
-        <a href="#" class="nav-logo">
-            <h2>ML</h2>
-        </a>
-        <!-- nav menu -->
-        <div class="nav-menu" id="nav-menu">
-            <!-- nav list -->
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link active-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#hobbies" class="nav-link">Hobbies</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- nav btn -->
-        <div class="nav-btns">
-            <!-- theme change btn -->
-            <i class="lni lni-pallet change-theme" id="theme-button"></i>
-            <!-- toggle btn -->
-            <div class="nav-toggle" id="nav-toggle">
-                <i class="lni lni-grid-alt"></i>
+    <header class="header" id="header">
+        <!-- nav -->
+        <nav class="nav nav-container">
+            <!-- nav logo -->
+            <a href="#" class="nav-logo">
+                <h2>ML</h2>
+            </a>
+            <!-- nav menu -->
+            <div class="nav-menu" id="nav-menu">
+                <!-- nav list -->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">Expérience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#hobbies" class="nav-link">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </nav>
-</header>
+            <!-- nav btn -->
+            <div class="nav-btns">
+                <!-- theme change btn -->
+                <i class="lni lni-pallet change-theme" id="theme-button"></i>
+                <!-- toggle btn -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="lni lni-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <!--=============== MAIN ===============-->
     <main class="main-content">
 
         <!--=============== HOME ===============-->
         <section class="home" id="home">
-            <div class="container">
+            <div class="home-container">
                 <!-- intro -->
                 <div class="intro">
                     <!-- avatar image -->
-                    <img src="images/avatar.png" alt="avatar">
+                    <img src="img/avatar-circle.png" alt="avatar">
                     <!-- info -->
                     <h1>Mélany Lascoux</h1>
-                    <span>Je suis <span class="info-text">Développeuse web junior</span></span>
+                    <h2>Développeuse web junior</h2>
                     <!-- social icons -->
                     <ul class="social-icons">
                         <li><a href="#"><i class="lni  lni-twitter-original"></i></a></li>
@@ -99,18 +96,18 @@
 
         <!--=============== About ===============-->
         <section class="about section" id="about">
-            <div class="container">
+            <div class="about-container">
                 <!-- section title -->
-                <h2 class="section-tittle padd-15">About Me</h2>
+                <h2 class="section-tittle">About Me</h2>
                 <div class="row">
-                    <div class="about-img padd-15">
+                    <div class="about-img">
                         <!-- avatar img -->
-                        <img src="images/avatar.png" alt="avatar-2">
+                        <img src="img/avatar-circle.png" alt="avatar">
                     </div>
-                    <div class="about content padd-15">
+                    <div class="about content">
                         <div class="rounded">
                             <div class="row">
-                                <div class="about-text padd-15">
+                                <div class="about-text">
                                     <!-- about text -->
                                     <cite>"Je suis peut être petite, mais mon esprit est aussi grand que l'univers." - Yoko Ono</cite>
                                     <p>Je m'appelle Mélany Lascoux, j'ai 27 ans et je suis Développeuse Web Junior.
@@ -126,83 +123,109 @@
                 </div>
             </div>
         </section>
+
         <!--=============== Quality ===============-->
         <section class="quality section">
-            <div class="container">
+            <div class="quality-container">
                 <!-- section title -->
-                <h2 class="section-title padd-15">Personnalité</h2>
+                <h2 class="section-title">Personnalité</h2>
                 <div class="row">
                     <!-- service item -->
-                    <div class="quality-item padd-15">
-                        <div class="quality-item-inner" style="background: rgb(108,108,229);">
-                            <img src="" alt="">
+                    <div class="quality-item">
+                        <div class="quality-item-inner quality-1">
                             <h3>Qualitées</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur assumenda delectus non dolorum in soluta aperiam hic fugit. Illo, voluptas? Consequuntur nihil aut quisquam at inventore error blanditiis nostrum natus?</p>
+                            <i class="lni lni-heart" style="font-size: 50px;"></i>
+                                <ul>
+                                    <li>Curieuse</li>
+                                    <li>Persévérante</li>
+                                    <li>Organisée</li>
+                                    <li>Ouvert d'esprit</li>
+                                    <li>Créative</li>
+                                    <li>Calme</li>
+                                    <li>Perfectionniste</li>
+                                </ul>
                         </div>
                     </div>
-                    <div class="quality-item padd-15">
-                        <div class="quality-item-inner" style="background: rgb(249,215,76);">
-                            <img src="" alt="">
+                    <div class="quality-item">
+                        <div class="quality-item-inner quality-2">
                             <h3>Valeurs</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur assumenda delectus non dolorum in soluta aperiam hic fugit. Illo, voluptas? Consequuntur nihil aut quisquam at inventore error blanditiis nostrum natus?</p>
+                            <i class="lni lni-users"style="font-size: 50px;"></i>
+                                <ul>
+                                    <li>Le respect d'atrui</li>
+                                    <li>L'entraide</li>
+                                    <li>La bienveillance</li>
+                                    <li>Une ambiance de travail saine</li>
+                                    <li>L'ethique</li>
+                                    <li>Le respect de la nature</li>
+                                </ul>
                         </div>
                     </div>
-                    <div class="quality-item padd-15">
-                        <div class="quality-item-inner" style="background: rgb(249,123,139);">
-                            <img src="" alt="">
+                    <div class="quality-item">
+                        <div class="quality-item-inner quality-3">
                             <h3>Préférences</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur assumenda delectus non dolorum in soluta aperiam hic fugit. Illo, voluptas? Consequuntur nihil aut quisquam at inventore error blanditiis nostrum natus?</p>
+                            <i class="lni lni-search-alt" style="font-size: 50px;"></i>
+                            <ul>
+                                <li>Front-end</li>
+                                <li>Design</li>
+                                <li>Autonomie</li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="text padd-15">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quas temporibus obcaecati autem animi mollitia dicta pariatur quasi error commodi sed harum, et eos dolorem aut in. Culpa, quasi facilis?</p>
                 </div>
             </div>
         </section>
+
         <!--=============== Skills ===============-->
         <section class="skills section">
-            <div class="container">
+            <div class="skills-container">
                 <!-- section title -->
-                <h2 class="section-title padd-15">Compétences</h2>
+                <h2 class="section-title-1">Compétences</h2>
                 <div class="row">
                     <!-- service item -->
-                    <div class="skills-item padd-15">
-                        <div class="skills-item-inner" style="background: rgb(108,108,229);">
-                            <img src="" alt="">
+                    <div class="skills-item">
+                        <div class="skills-item-inner skills-1">
                             <h3>Développement web</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur assumenda delectus non dolorum in soluta aperiam hic fugit. Illo, voluptas? Consequuntur nihil aut quisquam at inventore error blanditiis nostrum natus?</p>
+                            <i class="lni lni-code-alt" style="font-size: 50px;"></i>
+                                <ul>
+                                    <li>Réaliser un site web en HTML/CSS/PHP/JavaScript</li>
+                                    <li>Utiliser GitHub</li>
+                                    <li>Utiliser un CMS (WordPress)</li>
+                                    <li>Référencement (SEO)</li>
+                                    <li>Maquettage (Figma)</li>
+                                    <li>Travail d'équipe</li>
+                                    <li>Rédiger un cachier des charges</li>
+                                    <li>Utiliser un outil de gestion de projet (Trello)</li>
+                                    <li>Utiliser des logiciels de création (Canva)</li>
+                                </ul>
                         </div>
                     </div>
-                    <div class="skills-item padd-15">
-                        <div class="skills-item-inner" style="background: rgb(249,215,76);">
-                            <img src="" alt="">
+                    <div class="skills-item">
+                        <div class="skills-item-inner skills-2">
                             <h3>Soft Skills</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur assumenda delectus non dolorum in soluta aperiam hic fugit. Illo, voluptas? Consequuntur nihil aut quisquam at inventore error blanditiis nostrum natus?</p>
+                            <i class="lni lni-cup" style="font-size: 50px;"></i>
+                                <ul>
+                                    <li>Curiosité intellectuelle</li>
+                                    <li>Sens de l'organisation</li>
+                                    <li>Résolution de problèmes</li>
+                                    <li>Créativité</li>
+                                    <li>Rédaction</li>
+                                    <li>Recherche</li>
+                                    <li>Esprit Critique</li>
+                                </ul>
                         </div>
                     </div>
-                    <div class="skills-item padd-15">
-                        <div class="skills-item-inner" style="background: rgb(249,123,139);">
-                            <img src="" alt="">
-                            <h3>Autres</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur assumenda delectus non dolorum in soluta aperiam hic fugit. Illo, voluptas? Consequuntur nihil aut quisquam at inventore error blanditiis nostrum natus?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text padd-15">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quas temporibus obcaecati autem animi mollitia dicta pariatur quasi error commodi sed harum, et eos dolorem aut in. Culpa, quasi facilis?</p>
-                </div>
             </div>
         </section>
 
         <!--=============== Experience ===============-->
         <section class="section" id="experience">
-            <div class="container">
+            <div class="exp-container">
                 <!-- section title -->
-                <h2 class="section-title padd-15">Expériences</h2>
+                <h2 class="section-title">Expériences</h2>
+                <h3>Formations</h3>
                 <div class="row">
                     <!-- studies -->
-                    <div class="studies padd-15">Etudes</div>
+                    <div class="studies"></div>
                     <div class="row">
                         <div class="timeline-box">
                             <div class="timeline">
@@ -210,32 +233,47 @@
                                 <div class="timeline-item">
                                     <i class="lni lni-graduation timeline-icon"></i>
                                     <h3 class="timeline-date">
-                                        <i class="lni lni-calendar"></i> 2019 - present
+                                        <i class="lni lni-calendar"></i> Mai - Octobre 2021
                                     </h3>
-                                    <h3 class="timeline-title">Dipômes</h3>
-                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero vitae saepe facere earum sapiente quae placeat rerum magnam quod. Laborum esse enim unde aspernatur blanditiis suscipit sunt quae necessitatibus.</p>
+                                    <h3 class="timeline-title">Formation de La Fabrique du Numérique</h3>
+                                    <p class="timeline-text">Promotion Développement web.</p>
+                                        <li>HTML/CSS/PHP/JavaScript</li>
+                                        <li>WordPress</li>
+                                        <li>GitHub</li>
                                 </div>
                                 <div class="timeline-item">
                                     <i class="lni lni-graduation timeline-icon"></i>
                                     <h3 class="timeline-date">
-                                        <i class="lni lni-calendar"></i> 2019 - present
+                                        <i class="lni lni-calendar"></i> 2018 - 2019
                                     </h3>
-                                    <h3 class="timeline-title">Dipômes</h3>
-                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero vitae saepe facere earum sapiente quae placeat rerum magnam quod. Laborum esse enim unde aspernatur blanditiis suscipit sunt quae necessitatibus.</p>
+                                    <h3 class="timeline-title">Master 1 Mondes Médiévaux</h3>
+                                    <p class="timeline-text"></p>
                                 </div>
                                 <div class="timeline-item">
                                     <i class="lni lni-graduation timeline-icon"></i>
                                     <h3 class="timeline-date">
-                                        <i class="lni lni-calendar"></i> 2019 - present
+                                        <i class="lni lni-calendar"></i> 2014 - 2018
                                     </h3>
-                                    <h3 class="timeline-title">Dipômes</h3>
-                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero vitae saepe facere earum sapiente quae placeat rerum magnam quod. Laborum esse enim unde aspernatur blanditiis suscipit sunt quae necessitatibus.</p>
+                                    <h3 class="timeline-title">Licence en Histoire de l'Art et Archéologie</h3>
+                                    <p class="timeline-text">Diplômée en 2018</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <i class="lni lni-graduation timeline-icon"></i>
+                                    <h3 class="timeline-date">
+                                        <i class="lni lni-calendar"></i> 2011 - 2014
+                                    </h3>
+                                    <h3 class="timeline-title">Licence de Psychologie</h3>
+                                    <p class="timeline-text"></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- experiences -->
-                    <div class="experiences padd-15">
+
+                    <h3>Stages</h3>
+                    <div class="experiences">
+                        <div class="stages"></div>
+
                         <div class="row">
                             <div class="timeline-box">
                                 <div class="timeline">
@@ -243,26 +281,34 @@
                                     <div class="timeline-item">
                                         <i class="lni lni-briefcase timeline-icon"></i>
                                         <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2019 - present
+                                            <i class="lni lni-calendar"></i> Septembre 2021
                                         </h3>
-                                        <h3 class="timeline-title">Dipômes</h3>
-                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero vitae saepe facere earum sapiente quae placeat rerum magnam quod. Laborum esse enim unde aspernatur blanditiis suscipit sunt quae necessitatibus.</p>
+                                        <h3 class="timeline-title">Stage au Fablab la FaBrick</h3>
+                                        <p class="timeline-text">Stage réalisé dans le cadre de la validation de la formation de La Fabrique du Numérique.</p>
+                                            <li>Révision d'un site web WordPress</li>
+                                            <li>Elaboration et suivi du cahier des charges</li>
+                                            <li>Gestion de projet</li>
+                                            <li>Respect de la commande du client</li>
+                                            <li>Donner des conseils adaptés</li>
+                                            <li>Autonomie</li>
+                                            <li>Prise de décision</li>
+                                            <li>Référencement (SEO)</li>
                                     </div>
                                     <div class="timeline-item">
                                         <i class="lni lni-briefcase timeline-icon"></i>
                                         <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2019 - present
+                                            <i class="lni lni-calendar"></i> 2016 - 2019
                                         </h3>
-                                        <h3 class="timeline-title">Dipômes</h3>
-                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero vitae saepe facere earum sapiente quae placeat rerum magnam quod. Laborum esse enim unde aspernatur blanditiis suscipit sunt quae necessitatibus.</p>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <i class="lni lni-briefcase timeline-icon"></i>
-                                        <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2019 - present
-                                        </h3>
-                                        <h3 class="timeline-title">Dipômes</h3>
-                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero vitae saepe facere earum sapiente quae placeat rerum magnam quod. Laborum esse enim unde aspernatur blanditiis suscipit sunt quae necessitatibus.</p>
+                                        <h3 class="timeline-title">Stages de fouilles archéologiques</h3>
+                                        <p class="timeline-text">Ensemble de plusieurs stages effectués dans le cadre des mes études universitaires</p>
+                                            <li>Gestion d'équipe</li>
+                                            <li>Sens des responsabilité</li>
+                                            <li>Capacités d'adaptation</li>
+                                            <li>Patience</li>
+                                            <li>Rigueur</li>
+                                            <li>Capacités d'analyse</li>
+                                            <li>Travail de précision</li>
+                                            <li>Représentation schématique de données récoltées</li>
                                     </div>
                                 </div>
                             </div>
@@ -272,24 +318,25 @@
                 </div>
             </div>
         </section>
+
         <!--=============== Hobbies ===============-->
         <section class="section hobbies" id="hobbies">
-            <div class="container">
+            <div class="hobbies-container">
                 <!-- section title -->
-                <h2 class="section-title padd-15">Hobbies</h2>
+                <h2 class="section-title">Hobbies</h2>
                 <div class="row">
                     <!-- hobbies -->
-                    <div class="hobbies-item">
+                    <div class="hobbies-item hobbie-1">
                         <img src="" alt="">
                         <h3 class="plan">Jeux vidéo</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem molestiae modi commodi deleniti perspiciatis ullam quod possimus adipisci esse minima, sed temporibus quidem, ad nemo mollitia nam! Veritatis, vitae in!</p>
                     </div>
-                    <div class="hobbies-item">
+                    <div class="hobbies-item hobbie-2">
                         <img src="" alt="">
                         <h3 class="plan">Littérature</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem molestiae modi commodi deleniti perspiciatis ullam quod possimus adipisci esse minima, sed temporibus quidem, ad nemo mollitia nam! Veritatis, vitae in!</p>
                     </div>
-                    <div class="hobbies-item">
+                    <div class="hobbies-item hobbie-3">
                         <img src="" alt="">
                         <h3 class="plan">Psychologie</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem molestiae modi commodi deleniti perspiciatis ullam quod possimus adipisci esse minima, sed temporibus quidem, ad nemo mollitia nam! Veritatis, vitae in!</p>
@@ -297,9 +344,10 @@
                 </div>
             </div>
         </section>
+
         <!--=============== Portfolio ===============-->
         <section class="portfolio section" id="portfolio">
-            <div class="container">
+            <div class="portfolio-container">
                 <!-- section title -->
                 <h2 class="section-title padd-15">Portfolio</h2>
                 <div class="row">
@@ -358,6 +406,6 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     
     <!--=============== JS ===============-->
-    <script src="assets/js/main.js"></script>
+    <script src=""></script>
 </body>
 </html>
