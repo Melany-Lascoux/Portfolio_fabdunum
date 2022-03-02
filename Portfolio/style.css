@@ -373,10 +373,6 @@ h3 {
 }
 .quality-item h3 {
   margin-bottom: 0.5rem;
-  color: #fff;
-}
-.quality-item p {
-  color: #fff;
 }
 .quality-1 {
   background-color: rgb(108, 108, 229);
@@ -405,11 +401,7 @@ h3 {
   transform: translateY(-0.625rem);
 }
 .skills-item h3 {
-  margin-bottom: 0.5rem;
-  color: #fff;
-}
-.skills-item p {
-  color: #fff;
+  margin-bottom: 0.5rem;*
 }
 .skills-1 {
   background-color: rgb(108, 108, 229);
@@ -486,7 +478,7 @@ h3 {
   max-width: 100%;
 }
 .hobbies-item {
-  padding: 10px 100px;
+  padding: 10px 65px;
   background-color: #e9e7ee;
   text-align: center;
   border-radius: 1.25rem;
@@ -512,6 +504,7 @@ h3 {
 }
 .hobbie-3 {
   background-color: rgb(249, 123, 139);
+  white-space: nowrap;
 }
 
 /*========== Portfolio ==========*/
